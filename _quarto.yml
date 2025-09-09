@@ -2,16 +2,17 @@ project:
   type: website
 
 website:
-  title: "AbdulWasayZarbi"
+  title: "Abdul Wasay Zarbi"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: index.qmd
+      - text: Home
+      - href: about.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: styles.css
     toc: true
 
