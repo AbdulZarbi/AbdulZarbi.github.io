@@ -1,4 +1,4 @@
-name: Quarto Publish
+name: Quarto Publish Debug
 
 on:
   push:
@@ -11,23 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout code
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # 2. Setup Quarto
-      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      # 3. Install R packages your site needs
-      - name: Install R packages
+      - name: Setup R and Install Packages
         run: |
           R -e "install.packages(c('tidyverse','knitr','rmarkdown'), repos='https://cran.rstudio.com')"
 
-      # 4. Render the Quarto site
-      - name: Render site
-        run: quarto render
+      - name: Show current directory and files
+        run: |
+          pwd
+          ls -la
+          ls -la */
 
-      # 5. Publish to GitHub Pages
-      - name: Publish
+      - name: Render Quarto site
+        run: |
+          quarto render
+        continue-on-error: true  # Allows workflow to continue and show logs even if rendering fails
+
+      - name: Publish to GitHub Pages
+        if: success()  # Only runs if render succeeds
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
