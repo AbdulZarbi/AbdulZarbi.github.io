@@ -3,16 +3,21 @@ project:
 
 website:
   title: "Abdul Wasay Zarbi"
+  description: "Portfolio – Data Analyst & Researcher"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: Home
-      - href: about.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Portfolio"
+        href: portfolio.qmd
+      - text: "Contact"
+        href: contact.qmd
 
 format:
   html:
-    theme: journal
+    theme: lux
     css: styles.css
     toc: true
 
