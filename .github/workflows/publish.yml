@@ -1,31 +1,33 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: main
-
 name: Quarto Publish
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      # 1. Checkout code
+      - uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      # 2. Setup Quarto
+      - uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Python and Dependencies
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-          cache: 'pip'
-      - run: pip install jupyter
-      - run: pip install -r requirements.txt
+      # 3. Install R packages your site needs
+      - name: Install R packages
+        run: |
+          R -e "install.packages(c('tidyverse','knitr','rmarkdown'), repos='https://cran.rstudio.com')"
 
-      - name: Render and Publish
+      # 4. Render the Quarto site
+      - name: Render site
+        run: quarto render
+
+      # 5. Publish to GitHub Pages
+      - name: Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
