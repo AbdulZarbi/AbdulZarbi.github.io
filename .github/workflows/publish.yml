@@ -1,4 +1,4 @@
-name: Quarto Publish Debug
+name: Publish Quarto R site
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,23 +17,10 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Setup R and Install Packages
-        run: |
-          R -e "install.packages(c('tidyverse','knitr','rmarkdown'), repos='https://cran.rstudio.com')"
-
-      - name: Show current directory and files
-        run: |
-          pwd
-          ls -la
-          ls -la */
-
       - name: Render Quarto site
-        run: |
-          quarto render
-        continue-on-error: true  # Allows workflow to continue and show logs even if rendering fails
+        run: quarto render
 
       - name: Publish to GitHub Pages
-        if: success()  # Only runs if render succeeds
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
