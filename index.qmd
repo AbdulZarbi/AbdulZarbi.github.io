@@ -1,5 +1,5 @@
 ---
-title: "AbdulWasayZarbi.github.io"
+title: "Welcome to my Website"
 ---
 
 This is a Quarto website.
