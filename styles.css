@@ -1,1 +1,23 @@
 /* css styles */
+/* Custom styles matching Deepsha's portfolio */
+.rounded {
+    border-radius: 10px !important;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.hero-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
