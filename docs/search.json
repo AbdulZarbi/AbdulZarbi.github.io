@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Data Analyst and Market Researcher"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "Data Analyst and Market Researcher"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\nTechnical Skills - R Programming - Data Visualization - Statistical Analysis - Machine Learning\n\n\nTools & Technologies - RStudio, Git - Quarto, Markdown - ggplot2, tidyverse - Shiny Apps"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nDegree in Field - Indira Gandhi National Open University (2015)\nCertification - Google Data Analytics Professional Certificate (2024)"
+  },
+  {
+    "objectID": "Projects.html",
+    "href": "Projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Here are some of my recent projects…"
+  },
+  {
+    "objectID": "Projects.html#my-data-science-projects",
+    "href": "Projects.html#my-data-science-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Here are some of my recent projects…"
+  },
+  {
+    "objectID": "Posts/project1/index.html",
+    "href": "Posts/project1/index.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
+  },
+  {
+    "objectID": "Posts/project2/index.html",
+    "href": "Posts/project2/index.html",
+    "title": "Project 2",
+    "section": "",
+    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Abdul Zarbi",
+    "section": "",
+    "text": "Your Photo\n\n\n\n\n\nProjects • Resume • Contact"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Abdul Zarbi",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n{{&lt; page href=\"projects.qmd\" &gt;}}"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Abdul Zarbi",
+    "section": "About Me",
+    "text": "About Me\n{{&lt; page href=\"about.qmd\" &gt;}}"
+  }
+]

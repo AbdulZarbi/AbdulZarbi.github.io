@@ -1,0 +1,36 @@
+
+## 📄 7. Resume Page (resume.qmd)
+
+```yaml
+---
+title: "Resume"
+---
+
+::: {.columns}
+::: {.column width="70%"}
+## Work Experience
+
+### **Position** - Company (Date)
+- Achievement 1
+- Achievement 2
+
+## Education
+
+### **Degree** - University (Date)
+- Details
+:::
+
+::: {.column width="30%"}
+## Skills
+
+**Technical**
+- Skill 1
+- Skill 2
+
+**Languages**
+- English
+- Other
+:::
+:::
+
+[Download PDF Resume](images/ZARBI_RESUME25.pdf)

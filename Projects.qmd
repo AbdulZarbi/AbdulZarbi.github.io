@@ -1,0 +1,13 @@
+---
+title: "Projects"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  fields: [title, date, description]
+  categories: true
+---
+
+## My Data Science Projects
+
+Here are some of my recent projects...

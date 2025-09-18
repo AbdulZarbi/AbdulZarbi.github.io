@@ -1,0 +1,14 @@
+---
+title: "Project 2"
+description: "Project description"
+date: "2024-01-01"
+categories: [R, Data Science]
+image: image.jpg
+---
+
+Project content...
+
+```r
+# Example R code
+library(tidyverse)
+ggplot(data, aes(x, y)) + geom_point()
