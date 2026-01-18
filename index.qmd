@@ -1,21 +1,34 @@
 ---
 title: "Abdul Zarbi"
-image: images/profile.png
+image: images/Abdul.png
 ---
 ::: {.grid}
 ::: {.g-col-4}
-![Your Photo](images/profile.png){.rounded .shadow}
+![Your Photo](images/Abdul.png){.rounded .shadow}
 :::
 
 ::: {.g-col-8}
-# Hello, I'm Data Analyst and Market Researcher in Austin, Texas.
+
+about:
+  template: trestles  # This places the image on the left and text on the right
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/abdulzarbi 
+    - icon: github
+      text: Github
+      href: https://github.com/abdulzarbi
 :::
 :::
 
-## Featured Projects
+## 👋 Hi I'm Abdul.
+I specialize in helping companies and researchers analyze and visualize their datasets. I excel in data visualization. If you're looking for guidance on presenting your results or building complex interactive charts, I'm the expert you're seeking.
 
-{{< page href="projects.qmd" >}}
+With a solid 12-year track record in data science, I've collaborated with prestigious research institutes like the University of Queensland and leading private companies such as Datadog.
 
-## About Me
+I am now working as a consultant and on my educational websites like data-to-viz.com, Productive R Workflow and the graph galleries.
 
-{{< page href="about.qmd" >}}
+## Technical Skills
+- **Languages:** R, Tableau, SQL
+- **Tools:** Quarto, Tableau, Power BI
+- **Specialties:** Data Visualization, Statistical Modeling
