@@ -1,20 +1,30 @@
-/* Make the headings look modern */
-h1, h2, h3 {
-  color: #333;
+/* 1. Center the navigation links */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav.me-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+}
+
+/* 2. Style the navbar links */
+.nav-link {
+  color: #333 !important; /* Default dark color */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* 3. Blue hover effect */
+.nav-link:hover {
+  color: #3498db !important; /* Professional Blue */
+}
+
+/* 4. Optional: Active link color (which page you are currently on) */
+.nav-link.active {
+  color: #2980b9 !important;
   font-weight: 700;
-}
-
-/* Add more white space between sections */
-.quarto-title {
-  margin-bottom: 2rem;
-}
-
-/* Change link colors to a professional blue/grey */
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
