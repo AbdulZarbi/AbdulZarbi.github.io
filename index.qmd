@@ -4,7 +4,7 @@ image: images/Abdul.png
 ---
 ::: {.grid}
 ::: {.g-col-4}
-![Your Photo](images/Abdul.png){.rounded .shadow}
+
 :::
 
 ::: {.g-col-8}
