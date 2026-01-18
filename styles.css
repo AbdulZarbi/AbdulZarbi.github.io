@@ -1,23 +1,20 @@
-/* css styles */
-/* Custom styles matching Deepsha's portfolio */
-.rounded {
-    border-radius: 10px !important;
+/* Make the headings look modern */
+h1, h2, h3 {
+  color: #333;
+  font-weight: 700;
 }
 
-.shadow {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+/* Add more white space between sections */
+.quarto-title {
+  margin-bottom: 2rem;
 }
 
-.hero-section {
-    padding: 3rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+/* Change link colors to a professional blue/grey */
+a {
+  color: #3498db;
+  text-decoration: none;
 }
 
-.project-card {
-    transition: transform 0.3s ease;
-    margin-bottom: 2rem;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
+a:hover {
+  text-decoration: underline;
 }
