@@ -3,7 +3,7 @@ project:
   output-dir: docs  # Required for GitHub Pages
 
 website:
-  title: "Abdul Zarbi"
+  title: ""
   description: "Data Analyst Portfolio"
   navbar:
     background: white      # Yan uses a white navbar for a clean look
