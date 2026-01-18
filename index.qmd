@@ -14,7 +14,6 @@ image: images/profile.png
 ::: {.g-col-8}
 # Hello, I'm Data Analyst and Market Researcher in Austin, Texas.
 
-[Projects](#projects) • [Resume](#resume) • [Contact](#contact)
 :::
 :::
 
