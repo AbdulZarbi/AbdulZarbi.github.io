@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Abdul Zarbi"
-  description: "Abdul Zarbi Portfolio Website"
+  description: "Data Analyst Portfolio"
   site-url: https://abdulzarbi.github.io
   repo-url: https://github.com/AbdulZarbi/AbdulZarbi.github.io
   repo-subdir: ~/
@@ -13,7 +13,8 @@ website:
   bread-crumbs: true  # Fixed from "bread-crumbs" to "breadcrumbs"
   
   navbar:
-    background: light
+    background: white
+    foreground: dark
     search: true
     left:
       - href: index.qmd
@@ -39,7 +40,8 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+    light: cosmo
     css: styles.css
     toc: true
     code-link: true
