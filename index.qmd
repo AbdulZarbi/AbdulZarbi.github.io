@@ -11,16 +11,15 @@ about:
       text: Github
       href: https://github.com/AbdulZarbi
 ---
-:::
 
 ## 👋 Hi I'm Abdul.
-I specialize in helping companies and researchers analyze and visualize their datasets. I excel in data visualization. If you're looking for guidance on presenting your results or building complex interactive charts, I'm the expert you're seeking.
+I specialize in conducting market research and survey. I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. If you're looking for guidance on presenting your results or building complex interactive charts, I'm the expert you're seeking.
 
-With a solid 12-year track record in data science, I've collaborated with prestigious research institutes like the University of Queensland and leading private companies such as Datadog.
+With a solid 12-year track record in social research, I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in market research projects, where I utilized Excel, R,and Tableau to uncover insights that informed strategic decisions.
 
-I am now working as a consultant and on my educational websites like data-to-viz.com, Productive R Workflow and the graph galleries.
+As I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.
 
 ## Technical Skills
-- **Languages:** R, Tableau, SQL
-- **Tools:** Quarto, Tableau, Power BI
+- **Languages:** R, Tableau, SQL, LLM, Nvivo
+- **Tools:** Quarto, Excel, Advance MD, Client Track, ODK, Kobo Toolbox, Survey Monkey
 - **Specialties:** Data Visualization, Statistical Modeling
