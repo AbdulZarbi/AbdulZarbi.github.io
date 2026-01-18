@@ -1,3 +1,4 @@
+---
 title: "Abdul Zarbi"
 image: images/Abdul.png
 about:
