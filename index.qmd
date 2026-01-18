@@ -1,8 +1,10 @@
 ---
 title: "Abdul Zarbi"
+subtitle: "Data Analyst & Reseacher"
 image: images/Abdul.png
-about:
-  template: trestles  # This places the image on the left and text on the right
+about: # This places the image on the left and text on the right
+  template: trestles  
+  image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
