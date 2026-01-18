@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Posts/project1/index.html",
+    "href": "Posts/project1/index.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
+  },
+  {
     "objectID": "Projects.html",
     "href": "Projects.html",
     "title": "Projects",
@@ -12,48 +19,6 @@
     "title": "Projects",
     "section": "",
     "text": "Here are some of my recent projects…"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Data Analyst and Market Researcher"
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "",
-    "text": "Data Analyst and Market Researcher"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\n\nTechnical Skills - R Programming - Data Visualization - Statistical Analysis - Machine Learning\n\n\nTools & Technologies - RStudio, Git - Quarto, Markdown - ggplot2, tidyverse - Shiny Apps"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nDegree in Field - Indira Gandhi National Open University (2015)\nCertification - Google Data Analytics Professional Certificate (2024)"
-  },
-  {
-    "objectID": "Posts/project2/index.html",
-    "href": "Posts/project2/index.html",
-    "title": "Project 2",
-    "section": "",
-    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
-  },
-  {
-    "objectID": "Posts/project1/index.html",
-    "href": "Posts/project1/index.html",
-    "title": "Project 1",
-    "section": "",
-    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
   },
   {
     "objectID": "index.html",
@@ -75,5 +40,40 @@
     "title": "Abdul Zarbi",
     "section": "About Me",
     "text": "About Me\n{{&lt; page href=\"about.qmd\" &gt;}}"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "With over 12 years of experience in market research and social services, I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management.\nWith a Master’s degree in Public Administration and a Business Intelligence and Data Analytics Certification, I have a strong understanding of the theoretical foundation of data analysis, which I apply to real-world business problems.\nI thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in research projects, where I utilized R, SPSS, and Tableau to uncover insights that informed strategic decisions. My attention to detail and accuracy has been commended by my supervisors and colleagues alike.\nAs I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.\nI’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.\nI look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "With over 12 years of experience in market research and social services, I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management.\nWith a Master’s degree in Public Administration and a Business Intelligence and Data Analytics Certification, I have a strong understanding of the theoretical foundation of data analysis, which I apply to real-world business problems.\nI thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in research projects, where I utilized R, SPSS, and Tableau to uncover insights that informed strategic decisions. My attention to detail and accuracy has been commended by my supervisors and colleagues alike.\nAs I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.\nI’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.\nI look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\nTechnical Skills - R Programming - Data Visualization - Statistical Analysis - Machine Learning\n\n\nTools & Technologies - RStudio, Git - Quarto, Markdown - ggplot2, tidyverse - Shiny Apps"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nDegree in Field - Indira Gandhi National Open University (2015)\nCertification - Google Data Analytics Professional Certificate (2024)"
+  },
+  {
+    "objectID": "Posts/project2/index.html",
+    "href": "Posts/project2/index.html",
+    "title": "Project 2",
+    "section": "",
+    "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
   }
 ]

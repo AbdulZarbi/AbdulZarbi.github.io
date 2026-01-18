@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://abdulzarbi.github.io/Projects.html</loc>
-    <lastmod>2025-09-18T04:59:38.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://abdulzarbi.github.io/about.html</loc>
-    <lastmod>2025-09-18T04:59:38.929Z</lastmod>
-  </url>
-  <url>
-    <loc>https://abdulzarbi.github.io/Posts/project2/index.html</loc>
-    <lastmod>2025-09-18T04:59:38.908Z</lastmod>
-  </url>
-  <url>
     <loc>https://abdulzarbi.github.io/Posts/project1/index.html</loc>
-    <lastmod>2025-09-18T04:59:38.908Z</lastmod>
+    <lastmod>2026-01-18T00:57:33.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdulzarbi.github.io/Projects.html</loc>
+    <lastmod>2026-01-18T00:57:33.199Z</lastmod>
   </url>
   <url>
     <loc>https://abdulzarbi.github.io/resume.html</loc>
-    <lastmod>2025-09-18T04:59:38.954Z</lastmod>
+    <lastmod>2026-01-18T00:57:33.247Z</lastmod>
   </url>
   <url>
     <loc>https://abdulzarbi.github.io/index.html</loc>
-    <lastmod>2025-09-18T04:59:38.954Z</lastmod>
+    <lastmod>2026-01-18T00:57:33.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdulzarbi.github.io/about.html</loc>
+    <lastmod>2026-01-18T00:57:33.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdulzarbi.github.io/Posts/project2/index.html</loc>
+    <lastmod>2026-01-18T00:57:33.198Z</lastmod>
   </url>
 </urlset>
