@@ -3,23 +3,25 @@ project:
   output-dir: docs  # Required for GitHub Pages
 
 website:
-  title: ""
+  title: "AZ"
   description: "Data Analyst Portfolio"
   navbar:
     background: white      # Yan uses a white navbar for a clean look
     foreground: dark
     left:
       - href: index.qmd
-        text: Home
+        text: "HOME"
       - href: projects.qmd
-        text: Portfolio
+        text: "PORTOFLIO"
       - href: resume.qmd
-        text: Resume
+        text: "RESUME"
     right:
       - icon: github
         href: https://github.com/AbdulZarbi
       - icon: linkedin
         href: https://www.linkedin.com/in/abdulzarbi 
+        icon: Email
+        href: https://zarbi786@gmail.com 
 
 format:
   html:
