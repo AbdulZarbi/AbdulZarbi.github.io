@@ -4,7 +4,17 @@ title: "About Me"
 
 ## Background
 
-Data Analyst and Market Researcher
+With over 12 years of experience in market research and social services, I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. 
+
+With a Master's degree in Public Administration and a Business Intelligence and Data Analytics Certification, I have a strong understanding of the theoretical foundation of data analysis, which I apply to real-world business problems.
+
+I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in research projects, where I utilized R, SPSS, and Tableau to uncover insights that informed strategic decisions. My attention to detail and accuracy has been commended by my supervisors and colleagues alike.
+
+As I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.
+
+I’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.
+
+I look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com.
 
 ## Skills
 

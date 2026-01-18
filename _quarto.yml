@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Abdul Zarbi - Data Analyst"
+  title: "Abdul Zarbi"
   description: "Abdul Zarbi Portfolio Website"
   site-url: https://abdulzarbi.github.io
   repo-url: https://github.com/AbdulZarbi/AbdulZarbi.github.io
@@ -28,7 +28,7 @@ website:
       - icon: github
         href: https://github.com/abdulzarbi
       - icon: linkedin
-        href: https://www.linkedin.com/in/abdulzarbi  # Added https://
+        href: https://www.linkedin.com/in/abdulzarbi 
       - icon: envelope
         href: mailto:zarbi786@gmail.com
 
