@@ -1,42 +1,25 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: docs  # Required for GitHub Pages
 
 website:
   title: "Abdul Zarbi"
   description: "Data Analyst Portfolio"
-  site-url: https://abdulzarbi.github.io
-  repo-url: https://github.com/AbdulZarbi/AbdulZarbi.github.io
-  repo-subdir: ~/
-  page-navigation: true
-  reader-mode: true
-  bread-crumbs: true  # Fixed from "bread-crumbs" to "breadcrumbs"
-  
   navbar:
-    background: white
+    background: white      # Yan uses a white navbar for a clean look
     foreground: dark
-    search: true
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
       - href: projects.qmd
-        text: Projects
+        text: Portfolio
       - href: resume.qmd
         text: Resume
     right:
       - icon: github
-        href: https://github.com/abdulzarbi
+        href: https://github.com/AbdulZarbi
       - icon: linkedin
         href: https://www.linkedin.com/in/abdulzarbi 
-      - icon: envelope
-        href: mailto:zarbi786@gmail.com
-
-  page-footer:
-    center: |
-      © Copyright 2025 Abdul Zarbi • 
-      Made with <a href="https://quarto.org/">Quarto</a>
 
 format:
   html:
