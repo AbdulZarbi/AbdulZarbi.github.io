@@ -25,3 +25,7 @@ As I transition into AI and data science, I am eager to apply my research backgr
 - **Languages:** R, Tableau, SQL, LLM, Nvivo
 - **Tools:** Quarto, Excel, Advance MD, Client Track, ODK, Kobo Toolbox, Survey Monkey
 - **Specialties:** Data Visualization, Statistical Modeling
+
+## Education
+- **Master of Public Administration** - Indira Gandhi National Open University (2015)
+- **Bachelor of Pyschology and Educational Science** - Kabul University (2010)
