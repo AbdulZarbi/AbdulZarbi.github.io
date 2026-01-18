@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Abdul Zarbi",
     "section": "",
-    "text": "title: “Abdul Zarbi” image: images/Abdul.png about: template: trestles # This places the image on the left and text on the right links: - icon: linkedin text: LinkedIn href: https://www.linkedin.com/in/abdulzarbi - icon: github text: Github href: https://github.com/AbdulZarbi — :::"
+    "text": ":::"
   },
   {
     "objectID": "index.html#hi-im-abdul.",
