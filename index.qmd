@@ -1,11 +1,7 @@
 ---
 title: "Abdul Zarbi"
-description: "Data Analyst | Market Researcher"
 image: images/profile.png
-
 ---
-
-
 ::: {.grid}
 ::: {.g-col-4}
 ![Your Photo](images/profile.png){.rounded .shadow}
@@ -13,7 +9,6 @@ image: images/profile.png
 
 ::: {.g-col-8}
 # Hello, I'm Data Analyst and Market Researcher in Austin, Texas.
-
 :::
 :::
 
