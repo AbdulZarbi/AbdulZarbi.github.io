@@ -10,11 +10,13 @@ website:
     foreground: dark
     left:
       - href: index.qmd
-        text: "REPORTS"
+        text: "ABOUT ME"
       - href: projects.qmd
         text: "PORTOFLIO"
       - href: resume.qmd
         text: "RESUME"
+        href: research.qmd
+        text: "RESEARCHES"
     right:
       - icon: github
         href: https://github.com/AbdulZarbi
