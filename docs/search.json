@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Data Analyst and Market Researcher"
+    "text": "With over 12 years of experience in market research and social services, I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management.\nWith a Master’s degree in Public Administration and a Business Intelligence and Data Analytics Certification, I have a strong understanding of the theoretical foundation of data analysis, which I apply to real-world business problems.\nI thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in research projects, where I utilized R, SPSS, and Tableau to uncover insights that informed strategic decisions. My attention to detail and accuracy has been commended by my supervisors and colleagues alike.\nAs I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.\nI’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.\nI look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
     "section": "",
-    "text": "Data Analyst and Market Researcher"
+    "text": "With over 12 years of experience in market research and social services, I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management.\nWith a Master’s degree in Public Administration and a Business Intelligence and Data Analytics Certification, I have a strong understanding of the theoretical foundation of data analysis, which I apply to real-world business problems.\nI thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in research projects, where I utilized R, SPSS, and Tableau to uncover insights that informed strategic decisions. My attention to detail and accuracy has been commended by my supervisors and colleagues alike.\nAs I transition into the world of data, I am eager to apply my research background to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytical expertise to make a tangible impact on business growth.\nI’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.\nI look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com."
   },
   {
     "objectID": "about.html#skills",
@@ -32,7 +32,7 @@
     "href": "Projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here are some of my recent projects…"
+    "text": "Welcome to my portfolio. Here is a collection of my data analysis work.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Projects.html#my-data-science-projects",
@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "Abdul Zarbi",
     "section": "",
-    "text": "Your Photo\n\n\n\n\n\nProjects • Resume • Contact"
+    "text": "I specialize in conducting market research and survey. I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. If you’re looking for guidance on presenting your results or building complex interactive charts, I’m the expert you’re seeking.\nWith a solid 12-year track record in social research, I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in market research projects, where I utilized Excel, SQL, R,and Tableau to uncover insights that informed strategic decisions.\nAs I transition into AI and data science, I am eager to apply my research background data analytics to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytic expertise to make a tangible impact on your business growth."
   },
   {
     "objectID": "index.html#featured-projects",
@@ -75,5 +75,26 @@
     "title": "Abdul Zarbi",
     "section": "About Me",
     "text": "About Me\n{{&lt; page href=\"about.qmd\" &gt;}}"
+  },
+  {
+    "objectID": "index.html#hi-im-abdul.",
+    "href": "index.html#hi-im-abdul.",
+    "title": "Abdul Zarbi",
+    "section": "",
+    "text": "I specialize in conducting market research and survey. I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. If you’re looking for guidance on presenting your results or building complex interactive charts, I’m the expert you’re seeking.\nWith a solid 12-year track record in social research, I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in market research projects, where I utilized Excel, SQL, R,and Tableau to uncover insights that informed strategic decisions.\nAs I transition into AI and data science, I am eager to apply my research background data analytics to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytic expertise to make a tangible impact on your business growth."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Abdul Zarbi",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nLanguages: R, Tableau, SQL, LLM, Nvivo\nTools: Quarto, Excel, Advance MD, Client Track, ODK, Kobo Toolbox, Survey Monkey\nSpecialties: Data Visualization, Statistical Modeling"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Abdul Zarbi",
+    "section": "Education",
+    "text": "Education\n\nMaster of Public Administration - Indira Gandhi National Open University (2015)\nBachelor of Pyschology and Educational Science - Kabul University (2010)"
   }
 ]

@@ -15,7 +15,7 @@ website:
         text: "PORTOFLIO"
       - href: resume.qmd
         text: "RESUME"
-        href: research.qmd
+      - href: research.qmd
         text: "RESEARCHES"
     right:
       - icon: github

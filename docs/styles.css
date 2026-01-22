@@ -1,23 +1,30 @@
-/* css styles */
-/* Custom styles matching Deepsha's portfolio */
-.rounded {
-    border-radius: 10px !important;
+/* 1. Center the navigation links */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.shadow {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+.navbar-nav.me-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
 }
 
-.hero-section {
-    padding: 3rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+/* 2. Style the navbar links */
+.nav-link {
+  color: #333 !important; /* Default dark color */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.project-card {
-    transition: transform 0.3s ease;
-    margin-bottom: 2rem;
+/* 3. Blue hover effect */
+.nav-link:hover {
+  color: #3498db !important; /* Professional Blue */
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+/* 4. Optional: Active link color (which page you are currently on) */
+.nav-link.active {
+  color: #2980b9 !important;
+  font-weight: 700;
 }
