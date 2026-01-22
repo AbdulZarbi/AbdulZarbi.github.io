@@ -1,10 +1,4 @@
 ---
-title: "Projects"
-listing:
-  contents: projects    # This tells Quarto to look in the /projects folder
-  type: grid           # Use 'grid' to get the card-style layout
-  sort: "date desc"
-  categories: true      # Adds clickable tags like "Python" or "SQL"
+title: "My Projects"
 ---
-
-Welcome to my portfolio. Here is a collection of my data analysis work.
+Coming soon!
