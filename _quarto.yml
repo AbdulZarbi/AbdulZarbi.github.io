@@ -11,7 +11,7 @@ website:
     left:
       - href: index.qmd
         text: "ABOUT ME"
-      - href: projects.qmd
+      - href: portoflio.qmd
         text: "PORTOFLIO"
       - href: resume.qmd
         text: "RESUME"
