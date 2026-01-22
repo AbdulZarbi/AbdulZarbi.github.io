@@ -7,8 +7,8 @@
     "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
   },
   {
-    "objectID": "Projects.html",
-    "href": "Projects.html",
+    "objectID": "portoflio.html",
+    "href": "portoflio.html",
     "title": "My Projects",
     "section": "",
     "text": "Coming soon!"
