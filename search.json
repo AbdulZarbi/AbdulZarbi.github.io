@@ -7,8 +7,8 @@
     "text": "Project content…\n```r # Example R code library(tidyverse) ggplot(data, aes(x, y)) + geom_point()"
   },
   {
-    "objectID": "portoflio.html",
-    "href": "portoflio.html",
+    "objectID": "research.html",
+    "href": "research.html",
     "title": "My Projects",
     "section": "",
     "text": "Coming soon!"
@@ -77,8 +77,8 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
     "title": "My Projects",
     "section": "",
     "text": "Coming soon!"
