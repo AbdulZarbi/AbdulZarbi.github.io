@@ -15,7 +15,7 @@ about: # This places the image on the left and text on the right
       href: https://github.com/AbdulZarbi
     - icon: envelope
       text: Email
-      href: mailto: zarbi786@gmail.com 
+      href: mailto:zarbi786@gmail.com 
 ---
 
 ## 👋 Hi, I'm Abdul
