@@ -1,12 +1,11 @@
 project:
   type: website
-  output-dir: docs  # Required for GitHub Pages
+  output-dir: docs
 
 website:
   title: "Abdul Zarbi"
   description: "Data Analyst & Researcher Portfolio"
   favicon: images/Abdul.png
-  
   
   navbar:
     background: primary
@@ -29,7 +28,7 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
-
+        
   page-footer:
     left: "© 2025 Abdul Zarbi. All rights reserved."
     right: 
@@ -40,8 +39,7 @@ website:
 
 format:
   html:
-    theme: 
-      light: [cosmo, styles.css]
+    theme: cosmo
     css: styles.css
     toc: true
     toc-depth: 3

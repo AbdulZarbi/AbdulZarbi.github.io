@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "Abdul Zarbi",
     "section": "",
-    "text": "I specialize in conducting market research and survey. I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. If you’re looking for guidance on presenting your results or building complex interactive charts, I’m the expert you’re seeking.\nWith a solid 12-year track record in social research, I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in market research projects, where I utilized Excel, SQL, R,and Tableau to uncover insights that informed strategic decisions.\nAs I transition into AI and data science, I am eager to apply my research background data analytics to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytic expertise to make a tangible impact on your business growth."
+    "text": "I’m a data analyst and researcher with 10 years of experience transforming complex research data into actionable business insights. I specialize in market research, survey design, and statistical analysis with a proven track record of leading projects that drive strategic decision-making.\n\n\nWith expertise in both quantitative and qualitative research methods, I help organizations understand their markets, customers, and opportunities. My work combines rigorous statistical analysis with clear storytelling to deliver insights that matter.\nI’m currently expanding my expertise into AI and data science, bringing my deep research background into cutting-edge analytics. My goal is to leverage advanced data techniques to optimize product development, enhance marketing strategies, and create measurable business impact.\n\n\n\n\n10+ years of social research and market analysis experience\nExpert in turning large dataset into meaningful patterns and predictions\nSkilled at building interactive dashboards and compelling data visualizations\nStrong project management and stakeholder communication abilities\nPassionate about using data to solve real business problems"
   },
   {
     "objectID": "index.html#featured-projects",
@@ -88,14 +88,14 @@
     "href": "index.html#technical-skills",
     "title": "Abdul Zarbi",
     "section": "Technical Skills",
-    "text": "Technical Skills\n\nLanguages: R, Tableau, SQL, LLM, Nvivo\nTools: Quarto, Excel, Advance MD, Client Track, ODK, Kobo Toolbox, Survey Monkey\nSpecialties: Data Visualization, Statistical Modeling"
+    "text": "Technical Skills\nLanguages & Analytics: R, SQL, Tableau, Python (learning), LLM applications\nResearch Tools: Quarto, Excel, SPSS, NVivo, ODK, KoboToolbox, SurveyMonkey, AdvanceMD, ClientTrack\nSpecialties: Data Visualization, Statistical Modeling, Survey Design, Market Research, Qualitative Analysis"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Abdul Zarbi",
     "section": "Education",
-    "text": "Education\n\nMaster of Public Administration - Indira Gandhi National Open University (2015)\nBachelor of Pyschology and Educational Science - Kabul University (2010)"
+    "text": "Education\nMaster of Public Administration | Indira Gandhi National Open University | 2015\nBachelor of Psychology and Educational Science | Kabul University | 2010\n\nReady to collaborate? View my portfolio or download my resume"
   },
   {
     "objectID": "resume.html",
@@ -121,8 +121,78 @@
   {
     "objectID": "portfolio.html",
     "href": "portfolio.html",
-    "title": "My Projects",
+    "title": "Portfolio",
     "section": "",
-    "text": "Coming soon!"
+    "text": "Role: Lead Data Analyst | Duration: 3 months | Year: 2024\nChallenge: A humanitarian organization needed to analyze survey data from 5,000+ respondents across multiple regions to assess program effectiveness and inform strategic planning.\nApproach: - Designed and implemented comprehensive survey using KoboToolbox - Cleaned and processed data using R and Excel - Created interactive Tableau dashboard for stakeholder presentation - Performed statistical analysis to identify key trends and insights\nTools Used: R, Tableau, KoboToolbox, Excel\nResults: - Identified 3 key areas for program improvement, leading to 25% increase in participant satisfaction - Dashboard enabled real-time monitoring for program managers - Findings presented to executive leadership and influenced $2M funding allocation\nView Dashboard | Read Full Case Study\n\n\n\n\nRole: Research Analyst | Duration: 2 months | Year: 2023\nChallenge: Client needed to understand purchasing patterns and customer segments to optimize marketing strategy.\nApproach: - Conducted mixed-methods research (surveys + focus groups) - Analyzed 2,000+ survey responses using statistical modeling - Performed cluster analysis to identify distinct customer segments - Created data visualizations to communicate findings\nTools Used: R, Excel, NVivo, SurveyMonkey\nResults: - Identified 4 distinct customer segments with unique preferences - Recommendations led to 15% improvement in campaign conversion rates - Delivered actionable insights for targeted marketing strategy\nView Analysis | Download Report\n\n\n\n\nRole: Senior Researcher | Duration: 6 months | Year: 2022\nChallenge: Evaluate the impact of a health intervention program across 15 clinics serving 10,000+ patients.\nApproach: - Designed pre/post evaluation framework - Collected and analyzed quantitative health outcome data - Conducted qualitative interviews with 50+ beneficiaries - Performed statistical significance testing and regression analysis\nTools Used: R, SPSS, AdvanceMD, ClientTrack, NVivo\nResults: - Documented 40% improvement in key health indicators - Findings published in peer-reviewed journal - Program model adopted by 5 additional organizations\nRead Publication | View Methodology"
+  },
+  {
+    "objectID": "index.html#hi-im-abdul",
+    "href": "index.html#hi-im-abdul",
+    "title": "Abdul Zarbi",
+    "section": "",
+    "text": "I’m a data analyst and researcher with 10 years of experience transforming complex research data into actionable business insights. I specialize in market research, survey design, and statistical analysis with a proven track record of leading projects that drive strategic decision-making.\n\n\nWith expertise in both quantitative and qualitative research methods, I help organizations understand their markets, customers, and opportunities. My work combines rigorous statistical analysis with clear storytelling to deliver insights that matter.\nI’m currently expanding my expertise into AI and data science, bringing my deep research background into cutting-edge analytics. My goal is to leverage advanced data techniques to optimize product development, enhance marketing strategies, and create measurable business impact.\n\n\n\n\n10+ years of social research and market analysis experience\nExpert in turning large dataset into meaningful patterns and predictions\nSkilled at building interactive dashboards and compelling data visualizations\nStrong project management and stakeholder communication abilities\nPassionate about using data to solve real business problems"
+  },
+  {
+    "objectID": "portfolio.html#data-analysis-visualization-projects",
+    "href": "portfolio.html#data-analysis-visualization-projects",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Role: Lead Data Analyst | Duration: 3 months | Year: 2024\nChallenge: A humanitarian organization needed to analyze survey data from 5,000+ respondents across multiple regions to assess program effectiveness and inform strategic planning.\nApproach: - Designed and implemented comprehensive survey using KoboToolbox - Cleaned and processed data using R and Excel - Created interactive Tableau dashboard for stakeholder presentation - Performed statistical analysis to identify key trends and insights\nTools Used: R, Tableau, KoboToolbox, Excel\nResults: - Identified 3 key areas for program improvement, leading to 25% increase in participant satisfaction - Dashboard enabled real-time monitoring for program managers - Findings presented to executive leadership and influenced $2M funding allocation\nView Dashboard | Read Full Case Study\n\n\n\n\nRole: Research Analyst | Duration: 2 months | Year: 2023\nChallenge: Client needed to understand purchasing patterns and customer segments to optimize marketing strategy.\nApproach: - Conducted mixed-methods research (surveys + focus groups) - Analyzed 2,000+ survey responses using statistical modeling - Performed cluster analysis to identify distinct customer segments - Created data visualizations to communicate findings\nTools Used: R, Excel, NVivo, SurveyMonkey\nResults: - Identified 4 distinct customer segments with unique preferences - Recommendations led to 15% improvement in campaign conversion rates - Delivered actionable insights for targeted marketing strategy\nView Analysis | Download Report\n\n\n\n\nRole: Senior Researcher | Duration: 6 months | Year: 2022\nChallenge: Evaluate the impact of a health intervention program across 15 clinics serving 10,000+ patients.\nApproach: - Designed pre/post evaluation framework - Collected and analyzed quantitative health outcome data - Conducted qualitative interviews with 50+ beneficiaries - Performed statistical significance testing and regression analysis\nTools Used: R, SPSS, AdvanceMD, ClientTrack, NVivo\nResults: - Documented 40% improvement in key health indicators - Findings published in peer-reviewed journal - Program model adopted by 5 additional organizations\nRead Publication | View Methodology"
+  },
+  {
+    "objectID": "portfolio.html#research-publications",
+    "href": "portfolio.html#research-publications",
+    "title": "Portfolio",
+    "section": "Research Publications",
+    "text": "Research Publications\n\n“Data-Driven Approaches to Program Evaluation” - Journal of Social Research, 2024\n“Survey Design Best Practices for Development Programs” - International Research Quarterly, 2023\n“Analyzing Qualitative Data at Scale” - Research Methods Journal, 2022"
+  },
+  {
+    "objectID": "portfolio.html#sample-visualizations",
+    "href": "portfolio.html#sample-visualizations",
+    "title": "Portfolio",
+    "section": "Sample Visualizations",
+    "text": "Sample Visualizations\n[Include 2-3 embedded charts/dashboards here using Quarto’s visualization capabilities]"
+  },
+  {
+    "objectID": "portfolio.html#skills-demonstrated",
+    "href": "portfolio.html#skills-demonstrated",
+    "title": "Portfolio",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\n\n\nResearch & Analysis - Survey Design - Statistical Modeling - Mixed Methods Research - Impact Evaluation\n\n\nData & Tools - Data Cleaning & Processing - Interactive Dashboards - Data Visualization - Database Management\n\n\n\nInterested in working together? Contact me to discuss your project needs."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always interested in new opportunities, collaborations, and conversations about data analytics, research, and AI.\n\n\nWhether you need help with: - Market research and survey design - Data analysis and visualization - Statistical modeling and insights - Dashboard development - Research consultation\nI’d love to hear from you!"
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always interested in new opportunities, collaborations, and conversations about data analytics, research, and AI.\n\n\nWhether you need help with: - Market research and survey design - Data analysis and visualization - Statistical modeling and insights - Dashboard development - Research consultation\nI’d love to hear from you!"
+  },
+  {
+    "objectID": "contact.html#contact-information",
+    "href": "contact.html#contact-information",
+    "title": "Contact",
+    "section": "Contact Information",
+    "text": "Contact Information\n\n\nEmail\n📧 zarbi786@gmail.com\nResponse time: Usually within 24 hours\n\n\nLinkedIn\n💼 linkedin.com/in/abdulzarbi\nBest for professional networking\n\n\nGitHub\n💻 github.com/AbdulZarbi\nView my code and projects\n\n\nLocation\n📍 [Austin, Texas]\nAvailable for remote work and local opportunities"
+  },
+  {
+    "objectID": "contact.html#what-im-looking-for",
+    "href": "contact.html#what-im-looking-for",
+    "title": "Contact",
+    "section": "What I’m Looking For",
+    "text": "What I’m Looking For\nI’m currently seeking opportunities in:\n✅ Data Analyst roles in research, marketing, or product teams\n✅ Market Research positions leveraging statistical analysis\n✅ AI/ML projects where I can apply my research background\n✅ Consulting engagements for survey design and data insights\n✅ Collaborative research projects in social sciences or public health"
+  },
+  {
+    "objectID": "contact.html#quick-links",
+    "href": "contact.html#quick-links",
+    "title": "Contact",
+    "section": "Quick Links",
+    "text": "Quick Links\n\nDownload My Resume\nView My Portfolio\nRead My Research\nLearn More About Me\n\n\nI aim to respond to all genuine inquiries within 1-2 business days. Looking forward to connecting!"
   }
 ]
