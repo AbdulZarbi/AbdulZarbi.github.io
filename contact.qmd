@@ -1,0 +1,80 @@
+---
+title: "Contact"
+subtitle: "Let's Connect"
+---
+
+## Get In Touch
+
+I'm always interested in new opportunities, collaborations, and conversations about data analytics, research, and AI.
+
+### Professional Inquiries
+
+Whether you need help with:
+- Market research and survey design
+- Data analysis and visualization
+- Statistical modeling and insights
+- Dashboard development
+- Research consultation
+
+I'd love to hear from you!
+
+---
+
+## Contact Information
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### Email
+📧 [zarbi786@gmail.com](mailto:zarbi786@gmail.com)
+
+*Response time: Usually within 24 hours*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### LinkedIn
+💼 [linkedin.com/in/abdulzarbi](https://www.linkedin.com/in/abdulzarbi)
+
+*Best for professional networking*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### GitHub
+💻 [github.com/AbdulZarbi](https://github.com/AbdulZarbi)
+
+*View my code and projects*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Location
+📍 [Austin, Texas]
+
+*Available for remote work and local opportunities*
+:::
+
+:::
+
+---
+
+## What I'm Looking For
+
+I'm currently seeking opportunities in:
+
+✅ **Data Analyst roles** in research, marketing, or product teams  
+✅ **Market Research positions** leveraging statistical analysis  
+✅ **AI/ML projects** where I can apply my research background  
+✅ **Consulting engagements** for survey design and data insights  
+✅ **Collaborative research** projects in social sciences or public health
+
+---
+
+## Quick Links
+
+- [Download My Resume](resume.qmd)
+- [View My Portfolio](portfolio.qmd)
+- [Read My Research](research.qmd)
+- [Learn More About Me](about.qmd)
+
+---
+
+*I aim to respond to all genuine inquiries within 1-2 business days. Looking forward to connecting!*

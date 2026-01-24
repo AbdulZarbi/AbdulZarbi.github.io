@@ -1,10 +1,11 @@
 ---
 title: "Abdul Zarbi"
-subtitle: "Data Analyst & Reseacher"
+subtitle: "Data Analyst | Researcher | Turning Data into Insigts"
 image: images/Abdul.png
 about: # This places the image on the left and text on the right
-  template: trestles  
-  image-shape: round
+  template: jolla 
+  image-width: 15em
+  image-shape: rectangle
   links:
     - icon: linkedin
       text: LinkedIn
@@ -12,20 +13,43 @@ about: # This places the image on the left and text on the right
     - icon: github
       text: Github
       href: https://github.com/AbdulZarbi
+    - icon: envelope
+      text: Email
+      href: mailto: zarbi786@gmail.com 
 ---
 
-## 👋 Hi I'm Abdul.
-I specialize in conducting market research and survey. I’ve successfully led various market research and survey projects. These projects honed my skills in quantitative and qualitative research methods, statistical reasoning, and project management. If you're looking for guidance on presenting your results or building complex interactive charts, I'm the expert you're seeking.
+## 👋 Hi, I'm Abdul
 
-With a solid 12-year track record in social research, I thrive on turning complex numerical data into meaningful patterns and predictions. My experience includes working with large datasets in market research projects, where I utilized Excel, SQL, R,and Tableau to uncover insights that informed strategic decisions.
+I'm a data analyst and researcher with **10 years of experience** transforming complex research data into actionable business insights. I specialize in market research, survey design, and statistical analysis with a proven track record of leading projects that drive strategic decision-making.
 
-As I transition into AI and data science, I am eager to apply my research background data analytics to a corporate setting. I am particularly interested in roles that allow me to analyze consumer data to optimize product development and marketing strategies. I am ready to leverage my analytic expertise to make a tangible impact on your business growth.
+### What I Do
+
+With expertise in both **quantitative and qualitative research methods**, I help organizations understand their markets, customers, and opportunities. My work combines rigorous statistical analysis with clear storytelling to deliver insights that matter.
+
+I'm currently expanding my expertise into **AI and data science**, bringing my deep research background into cutting-edge analytics. My goal is to leverage advanced data techniques to optimize product development, enhance marketing strategies, and create measurable business impact.
+
+### Why Work With Me
+
+- **10+ years** of social research and market analysis experience
+- Expert in turning large dataset into meaningful patterns and predictions
+- Skilled at building interactive dashboards and compelling data visualizations
+- Strong project management and stakeholder communication abilities
+- Passionate about using data to solve real business problems
 
 ## Technical Skills
-- **Languages:** R, Tableau, SQL, LLM, Nvivo
-- **Tools:** Quarto, Excel, Advance MD, Client Track, ODK, Kobo Toolbox, Survey Monkey
-- **Specialties:** Data Visualization, Statistical Modeling
+
+**Languages & Analytics:** R, SQL, Tableau, Python (learning), LLM applications
+
+**Research Tools:** Quarto, Excel, SPSS, NVivo, ODK, KoboToolbox, SurveyMonkey, AdvanceMD, ClientTrack
+
+**Specialties:** Data Visualization, Statistical Modeling, Survey Design, Market Research, Qualitative Analysis
 
 ## Education
-- **Master of Public Administration** - Indira Gandhi National Open University (2015)
-- **Bachelor of Pyschology and Educational Science** - Kabul University (2010)
+
+**Master of Public Administration** | Indira Gandhi National Open University | 2015
+
+**Bachelor of Psychology and Educational Science** | Kabul University | 2010
+
+---
+
+*Ready to collaborate? [View my portfolio](./portfolio.html) or [download my resume](./resume.html)*

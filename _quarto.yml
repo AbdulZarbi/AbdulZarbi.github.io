@@ -3,29 +3,48 @@ project:
   output-dir: docs  # Required for GitHub Pages
 
 website:
-  title: "HOME"
-  description: "Data Analyst Portfolio"
+  title: "Abdul Zarbi"
+  description: "Data Analyst & Researcher Portfolio"
+  favicon: images/Abdul.png
+  
+  
   navbar:
-    background: white      # Yan uses a white navbar for a clean look
-    foreground: dark
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: "ABOUT ME"
-      - href: portfolio.qmd
-        text: "PORTFOLIO"
-      - href: resume.qmd
-        text: "RESUME"
-      - href: research.qmd
-        text: "RESEARCHES"
+      - text: "Home"
+        href: index.qmd
+      - text: "About Me"
+        href: about.qmd
+      - text: "Portfolio"
+        href: portfolio.qmd
+      - text: "Resume"
+        href: resume.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Contact"
+        href: contact.qmd
     right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
+
+  page-footer:
+    left: "© 2025 Abdul Zarbi. All rights reserved."
+    right: 
       - icon: linkedin
-        href: https://www.linkedin.com/in/abdulzarbi 
+        href: https://www.linkedin.com/in/abdulzarbi
+      - icon: github
+        href: https://github.com/AbdulZarbi
 
 format:
   html:
     theme: 
-      light: cosmo        # "Cosmo" or "Flatly" are closest to his style
-    css: styles.css       # We will add custom CSS next
-    toc: true             # Table of contents on the right
+      light: [cosmo, styles.css]
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-fold: true
+    link-external-newwindow: true
