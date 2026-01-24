@@ -26,6 +26,6 @@ website:
 format:
   html:
     theme: 
-      light: cosmo        # "Cosmo" or "Flatly" are closest to his style
+      light: lux        # "Cosmo" or "Flatly" are closest to his style
     css: styles.css       # We will add custom CSS next
     toc: true             # Table of contents on the right
