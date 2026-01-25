@@ -1,4 +1,8 @@
 ---
-title: "My Projects"
+title: "Resume"
+format:
+  html: default
+  pdf: 
+    output-file: "ZARBI_RESUME27.pdf"
+    output-dir: "docs"
 ---
-Coming soon!

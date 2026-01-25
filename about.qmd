@@ -15,28 +15,3 @@ As I transition into the world of data, I am eager to apply my research backgrou
 I’m actively seeking opportunities, and my passion for AI and data science drives my desire to make a meaningful contribution.
 
 I look forward to connecting with new professionals. Feel free to add me on LinkedIn or email me at zarbi786@gmail.com.
-
-## Skills
-
-::: {.grid}
-::: {.g-col-6}
-**Technical Skills**
-- R Programming
-- Data Visualization
-- Statistical Analysis
-- Machine Learning
-:::
-
-::: {.g-col-6}
-**Tools & Technologies**
-- RStudio, Git
-- Quarto, Markdown
-- ggplot2, tidyverse
-- Shiny Apps
-:::
-:::
-
-## Education
-
-- **Degree in Field** - Indira Gandhi National Open University (2015)
-- **Certification** - Google Data Analytics Professional Certificate (2024)

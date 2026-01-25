@@ -2,7 +2,6 @@
 title: "Contact"
 subtitle: "Let's Connect"
 ---
-
 ## Get In Touch
 
 I'm always interested in new opportunities, collaborations, and conversations about data analytics, research, and AI.
