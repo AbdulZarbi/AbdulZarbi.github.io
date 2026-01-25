@@ -19,8 +19,6 @@ website:
         href: portfolio.qmd
       - text: "Resume"
         href: resume.qmd
-      - text: "Download Resume PDF"
-        href: docs/ZARBI_RESUME27.pdf
       - text: "Research"
         href: research.qmd
       - text: "Contact"
