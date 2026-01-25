@@ -27,21 +27,18 @@ I'd love to hear from you!
 ### Email
 📧 [zarbi786@gmail.com](mailto:zarbi786@gmail.com)
 
-*Response time: Usually within 24 hours*
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ### LinkedIn
 💼 [linkedin.com/in/abdulzarbi](https://www.linkedin.com/in/abdulzarbi)
 
-*Best for professional networking*
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ### GitHub
 💻 [github.com/AbdulZarbi](https://github.com/AbdulZarbi)
 
-*View my code and projects*
 :::
 
 ::: {.g-col-12 .g-col-md-6}
