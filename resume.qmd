@@ -1,8 +1,16 @@
 ---
 title: "Resume"
-format:
-  html: default
-  pdf: 
-    output-file: "ZARBI_RESUME27.pdf"
-    output-dir: "docs"
+subtitle: "Abdul Zarbi - Data Analyst & Researcher"
+---
+
+::: {.text-center}
+[📄 Download Resume PDF](dZARBI_RESUME27.pdf){.btn .btn-primary}
+:::
+
+---
+
+## View Online or Download
+
+You can view my resume below or download the PDF version using the button above.
+
 ---

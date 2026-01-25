@@ -100,9 +100,9 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "My Projects",
+    "title": "Resume",
     "section": "",
-    "text": "Coming soon!"
+    "text": "📄 Download Resume PDF"
   },
   {
     "objectID": "research.html",
@@ -194,5 +194,68 @@
     "title": "Contact",
     "section": "Quick Links",
     "text": "Quick Links\n\nDownload My Resume\nView My Portfolio\nRead My Research\nLearn More About Me\n\n\nI aim to respond to all genuine inquiries within 1-2 business days. Looking forward to connecting!"
+  },
+  {
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Resume",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nExperienced Data Analyst and Researcher with 12+ years of expertise in market research, survey design, and statistical analysis. Proven track record of transforming complex datasets into actionable insights that drive strategic decision-making. Currently expanding expertise into AI and data science to deliver cutting-edge analytics solutions."
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Resume",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nSenior Research Analyst\n[Organization Name] | [City, Country] | [Start Date] - Present\n\nLead market research projects analyzing data from 5,000+ respondents across multiple regions\nDesign and implement comprehensive surveys using KoboToolbox and ODK\nCreate interactive dashboards in Tableau for real-time stakeholder monitoring\nConduct statistical modeling and analysis using R, SQL, and Excel\nPresent findings to executive leadership, influencing multi-million dollar funding decisions\n\nKey Achievement: Identified 3 critical program improvements leading to 25% increase in participant satisfaction\n\n\nResearch Analyst\n[Organization Name] | [City, Country] | [Start Date] - [End Date]\n\nConducted mixed-methods research combining quantitative surveys and qualitative focus groups\nAnalyzed 2,000+ survey responses using statistical modeling and cluster analysis\nDeveloped data visualizations to communicate complex findings to non-technical stakeholders\nManaged research projects from design through implementation and reporting\n\nKey Achievement: Delivered customer segmentation analysis that improved marketing campaign conversion by 15%\n\n\nData & Research Specialist\n[Organization Name] | [City, Country] | [Start Date] - [End Date]\n\nDesigned evaluation frameworks for health intervention programs across 15 clinics\nCollected and analyzed health outcome data for 10,000+ patients\nPerformed statistical significance testing and regression analysis\nConducted qualitative interviews and thematic analysis using NVivo\n\nKey Achievement: Documented 40% improvement in key health indicators; findings published in peer-reviewed journal"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\n\nMaster of Public Administration\nIndira Gandhi National Open University | 2015\nRelevant Coursework: Research Methods, Statistical Analysis, Public Policy Analysis\n\n\nBachelor of Psychology and Educational Science\nKabul University | 2010\nRelevant Coursework: Research Design, Behavioral Statistics, Data Collection Methods"
+  },
+  {
+    "objectID": "resume.html#technical-skills",
+    "href": "resume.html#technical-skills",
+    "title": "Resume",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nData Analysis & Programming\n\nLanguages: R, SQL, Python (learning)\nStatistical Analysis: Regression, Cluster Analysis, Hypothesis Testing\nMachine Learning: Exploring LLM applications and AI tools\n\n\n\nData Visualization\n\nTools: Tableau, Excel, ggplot2, Plotly\nSpecialties: Interactive dashboards, Statistical charts, Infographics\n\n\n\nResearch Tools\n\nSurvey Platforms: KoboToolbox, ODK, SurveyMonkey\nQualitative Analysis: NVivo, thematic coding\nDocumentation: Quarto, R Markdown, LaTeX\n\n\n\nDatabase & Data Management\n\nSystems: SQL databases, Excel (Advanced), ClientTrack, AdvanceMD\nSkills: Data cleaning, ETL processes, Database design"
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Resume",
+    "section": "Certifications",
+    "text": "Certifications\n\n[Certification Name] - [Issuing Organization], [Year]\n[Certification Name] - [Issuing Organization], [Year]\n\n(Add your actual certifications or remove this section)"
+  },
+  {
+    "objectID": "resume.html#publications-presentations",
+    "href": "resume.html#publications-presentations",
+    "title": "Resume",
+    "section": "Publications & Presentations",
+    "text": "Publications & Presentations\n\n“Data-Driven Approaches to Program Evaluation”\nJournal of Social Research, 2024\n“Survey Design Best Practices for Development Programs”\nInternational Research Quarterly, 2023\n“Analyzing Qualitative Data at Scale”\nResearch Methods Journal, 2022"
+  },
+  {
+    "objectID": "resume.html#languages",
+    "href": "resume.html#languages",
+    "title": "Resume",
+    "section": "Languages",
+    "text": "Languages\n\nEnglish: Fluent (Professional Working Proficiency)\n[Your Native Language]: Native\n[Other Languages]: [Proficiency Level]"
+  },
+  {
+    "objectID": "resume.html#professional-affiliations",
+    "href": "resume.html#professional-affiliations",
+    "title": "Resume",
+    "section": "Professional Affiliations",
+    "text": "Professional Affiliations\n\n[Professional Organization Name]\n[Professional Organization Name]\n\n\n\nLet’s Connect\nLinkedIn GitHub Email Me\n\n\nLast Updated: January 2026"
+  },
+  {
+    "objectID": "resume.html#view-online-or-download",
+    "href": "resume.html#view-online-or-download",
+    "title": "Resume",
+    "section": "View Online or Download",
+    "text": "View Online or Download\nYou can view my resume below or download the PDF version using the button above."
   }
 ]
