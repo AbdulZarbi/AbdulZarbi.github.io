@@ -44,6 +44,7 @@ I'm currently expanding my expertise into **AI and data science**, bringing my d
 
 **Specialties:** Data Visualization, Statistical Modeling, Survey Design, Market Research, Qualitative Analysis
 
+[Download My Resume](docs/ZARBI_RESUME27.pdf){.btn}
 ---
 
 *Ready to collaborate? [View my portfolio](./portfolio.html) or [download my resume](./resume.html)*
