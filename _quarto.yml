@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "Abdul_Zarbi_Resume.pdf"
+    - "ZARBI_RESUME27.pdf"
 
 website:
   title: "Abdul Zarbi"
