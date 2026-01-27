@@ -576,3 +576,42 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
+/* ============================================
+   GLASSMORPHISM EFFECT (OPTIONAL)
+   ============================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* ============================================
+   QUARTO-SPECIFIC OVERRIDES FOR DARK HEADER
+   ============================================ */
+.quarto-title-block {
+  background: radial-gradient(ellipse at top left, #1e3a8a 0%, #6366f1 50%, #7c3aed 100%) !important;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.quarto-title .title {
+  color: white !important;
+}
+
+.quarto-title .subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.quarto-title-block p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#quarto-content p {
+  color: var(--text-secondary);
+}
+
+.about-entity p {
+  color: rgba(255, 255, 255, 0.8);
+}
