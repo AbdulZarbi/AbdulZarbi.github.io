@@ -1,6 +1,8 @@
-project:
-  type: website
-  output-dir: docs
+   project:
+     type: website
+     output-dir: docs
+     resources:
+       - "ZARBI_RESUME27.pdf"
 
 website:
   title: "Abdul Zarbi"
@@ -46,3 +48,4 @@ format:
     code-copy: true
     code-fold: true
     link-external-newwindow: true
+    
