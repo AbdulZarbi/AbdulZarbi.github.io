@@ -182,9 +182,29 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="portfolio.html" class="btn-primary me-3">View My Portfolio</a> <a href="docs/ZARBI_RESUME27.pdf" class="btn-primary me-3">Download My Resume</a></p>
 <p><em>Ready to collaborate? <a href="./portfolio.html">View my portfolio</a> or <a href="./resume.html">download my resume</a></em></p>
 <hr>
-<div style="text-align: center; margin: 2rem 0;">
-<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220907.77389252304!2d-97.9383829!3d30.307182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy"> </iframe></p>
-</div>
+<div id="map" style="height: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 2rem 0;"></div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // Initialize map centered on Austin, Texas
+  var map = L.map('map').setView([30.2672, -97.7431], 10);
+  // Clean, minimal map style - shows only major roads, cities, and states
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap contributors, © CARTO',
+    maxZoom: 19
+  }).addTo(map);
+  // Add marker for Austin with custom styling
+  var marker = L.marker([30.2672, -97.7431]).addTo(map);
+  marker.bindPopup("<b>Austin, Texas</b><br>📍 My Location").openPopup();
+  // Add subtle circle to show general area
+  var circle = L.circle([30.2672, -97.7431], {
+    color: '#3b82f6',
+    fillColor: '#3b82f6',
+    fillOpacity: 0.15,
+    radius: 20000,
+    weight: 2
+  }).addTo(map);
+</script>
 
 
 </section>
