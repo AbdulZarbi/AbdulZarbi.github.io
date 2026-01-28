@@ -47,6 +47,6 @@ I'm currently expanding my expertise into **AI and data science**, bringing my d
 ---
 
 [View My Portfolio](portfolio.html){.btn-primary .me-3}
-[Download Resume](docs/ZARBI_RESUME27.pdf){.btn-secondary}
+[Download Resume](docs/ZARBI_RESUME27.pdf){.btn-primary .me-3}
 
 *Ready to collaborate? [View my portfolio](./portfolio.html) or [download my resume](./resume.html)*

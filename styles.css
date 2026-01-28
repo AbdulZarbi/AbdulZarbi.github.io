@@ -738,3 +738,18 @@ a {
 .footer a:hover, .nav-footer a:hover {
   color: rgba(255, 255, 255, 0.9) !important;
 }
+/* ============================================
+   LEFT ALIGN EVERYTHING ON HOME PAGE
+   ============================================ */
+
+/* Left align all content */
+.quarto-title-block,
+.quarto-title .title,
+.quarto-title .subtitle,
+.about-entity,
+#quarto-content p,
+#quarto-content h2,
+#quarto-content h3,
+#quarto-content ul {
+  text-align: left !important;
+}
