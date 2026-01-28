@@ -4,6 +4,7 @@ subtitle: "Featured Data Analysis & Visualization Projects"
 toc: false
 ---
 
+```{=html}
 <style>
 .project-grid {
   display: grid;
@@ -227,6 +228,7 @@ Explore my data analysis and visualization projects showcasing expertise in R, T
 </div>
 
 </div>
+```
 
 ---
 
@@ -262,10 +264,11 @@ Explore my data analysis and visualization projects showcasing expertise in R, T
 
 ---
 
+```{=html}
 <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 12px;">
   <h3 style="color: #1e293b; margin-bottom: 1rem;">Interested in Working Together?</h3>
   <p style="color: #64748b; margin-bottom: 1.5rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
   <a href="contact.qmd" class="project-btn btn-primary" style="margin-right: 1rem;">Get In Touch</a>
   <a href="Abdul_Zarbi_Resume.pdf" class="project-btn btn-secondary">Download Resume</a>
 </div>
-
+```
