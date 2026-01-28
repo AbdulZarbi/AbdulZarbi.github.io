@@ -32,7 +32,7 @@ website:
         href: https://github.com/AbdulZarbi
         
   page-footer:
-    left: "© 2025 Abdul Zarbi. All rights reserved."
+    left: "Copyright © Abdul Zarbi 2025"
     right: 
       - icon: linkedin
         href: https://www.linkedin.com/in/abdulzarbi
@@ -43,7 +43,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
     toc-depth: 3
     code-copy: true
     code-fold: true
