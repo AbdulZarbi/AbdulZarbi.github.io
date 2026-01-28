@@ -69,17 +69,7 @@ subtitle: "Featured Projects & Case Studies"
 
 [Read Publication](#) | [View Methodology](#)
 
----
-
-## Research Publications
-
-1. **"Data-Driven Approaches to Program Evaluation"** - Journal of Social Research, 2024
-2. **"Survey Design Best Practices for Development Programs"** - International Research Quarterly, 2023
-3. **"Analyzing Qualitative Data at Scale"** - Research Methods Journal, 2022
-
----
-
-## Sample Visualizations
+### Sample Visualizations
 
 *[Include 2-3 embedded charts/dashboards here using Quarto's visualization capabilities]*
 
@@ -97,20 +87,20 @@ subtitle: "Featured Projects & Case Studies"
 
 ---
 
-## Skills Demonstrated
+### Skills Demonstrated
 
 ::: {.grid}
 
 ::: {.g-col-6}
 **Research & Analysis**
+
 - Survey Design
 - Statistical Modeling
-- Mixed Methods Research
+- Mixed Research Methods 
 - Impact Evaluation
-:::
 
-::: {.g-col-6}
 **Data & Tools**
+
 - Data Cleaning & Processing
 - Interactive Dashboards
 - Data Visualization

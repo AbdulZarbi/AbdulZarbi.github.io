@@ -18,7 +18,7 @@ about: # This places the image on the left and text on the right
       href: mailto:zarbi786@gmail.com 
 ---
 
-## 👋 Hi, I'm Abdul
+## 👋 Hi, I'm Abdul Zarbi
 
 I'm a data analyst and researcher with **10 years of experience** transforming complex research data into actionable business insights. I specialize in market research, survey design, and statistical analysis with a proven track record of leading projects that drive strategic decision-making.
 
@@ -30,23 +30,23 @@ I'm currently expanding my expertise into **AI and data science**, bringing my d
 
 ### Why Work With Me
 
-- **10+ years** of social research and market analysis experience
-- Expert in turning large dataset into meaningful patterns and predictions
-- Skilled at building interactive dashboards and compelling data visualizations
+- **Over 10 years** of social research and market analysis experience.
+- Expert in turning large datasets into meaningful patterns and predictions.
+- Skilled at building interactive dashboards and compelling data visualizations.
 - Strong project management and stakeholder communication abilities
-- Passionate about using data to solve real business problems
+- Passionate about using data to solve real business problems.
 
-## Technical Skills
+### Technical Skills
 
-**Languages & Analytics:** R, SQL, Tableau, Python (learning), LLM applications
+**Languages & Analytics:** R, Quarto, SQL, Tableau, Github, LLM applications
 
-**Research Tools:** Quarto, Excel, SPSS, NVivo, ODK, KoboToolbox, SurveyMonkey, AdvanceMD, ClientTrack
+**Research Tools:** Excel, SPSS, NVivo, ODK, Kobo Toolbox, Survey Monkey, Advance MD, Client Track
 
-**Specialties:** Data Visualization, Statistical Modeling, Survey Design, Market Research, Qualitative Analysis
+**Specialties:** Data Visualization, Statistical Modeling, Survey Design, Market Research, Quantitative and Qualitative Analysis
 
 ---
 
 [View My Portfolio](portfolio.html){.btn-primary .me-3}
-[Download Resume](docs/ZARBI_RESUME27.pdf){.btn-primary .me-3}
+[Download My Resume](docs/ZARBI_RESUME27.pdf){.btn-primary .me-3}
 
 *Ready to collaborate? [View my portfolio](./portfolio.html) or [download my resume](./resume.html)*
