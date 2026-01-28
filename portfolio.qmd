@@ -135,22 +135,22 @@ Explore my data analysis and visualization projects showcasing expertise in R, T
 
 <!-- Project 1: Tableau Dashboard -->
 <div class="project-card">
-  <div class="project-image" style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);">
-    📊
-  </div>
+<div class="project-image" style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); padding: 0;">
+  <img src="images/tableau.png" alt="Tableau Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
   <div class="project-content">
     <div class="project-category">Tableau Visualization</div>
-    <h3 class="project-title">Market Research Interactive Dashboard</h3>
+
     <p class="project-description">
-      Comprehensive Tableau dashboard analyzing survey data from 5,000+ respondents across multiple regions. Features interactive filters, trend analysis, and key performance indicators for stakeholder decision-making.
+       Analyzing public datasets. Features interactive filters, trend analysis, and Tableau history.
     </p>
     <div class="project-tech">
       <span class="tech-tag">Tableau</span>
       <span class="tech-tag">Data Visualization</span>
-      <span class="tech-tag">KPI Tracking</span>
+      <span class="tech-tag">tableau history</span>
     </div>
     <div class="project-links">
-      <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" target="_blank" class="project-btn btn-primary">View Dashboard</a>
+      <a href="https://public.tableau.com/app/profile/abdul.zarbi" target="_blank" class="project-btn btn-primary">View Dashboard</a>
     </div>
   </div>
 </div>
@@ -230,39 +230,40 @@ Explore my data analysis and visualization projects showcasing expertise in R, T
 </div>
 ```
 
----
+------------------------------------------------------------------------
 
 ## Skills Demonstrated Across Projects
 
-::: {.grid}
-
+:::::: grid
 ::: {.g-col-12 .g-col-md-4}
 ### 📊 Data Visualization
-- Interactive Tableau dashboards
-- Statistical charts with ggplot2
-- Executive-ready presentations
-- KPI tracking & monitoring
+
+-   Interactive Tableau dashboards
+-   Statistical charts with ggplot2
+-   Executive-ready presentations
+-   KPI tracking & monitoring
 :::
 
 ::: {.g-col-12 .g-col-md-4}
 ### 🔬 Statistical Analysis
-- Regression modeling
-- Cluster analysis
-- Hypothesis testing
-- Predictive analytics
+
+-   Regression modeling
+-   Cluster analysis
+-   Hypothesis testing
+-   Predictive analytics
 :::
 
 ::: {.g-col-12 .g-col-md-4}
 ### 🛠️ Technical Tools
-- R & RStudio
-- Tableau & Excel
-- SQL databases
-- Quarto & R Markdown
-:::
 
+-   R & RStudio
+-   Tableau & Excel
+-   SQL databases
+-   Quarto & R Markdown
 :::
+::::::
 
----
+------------------------------------------------------------------------
 
 ```{=html}
 <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 12px;">
