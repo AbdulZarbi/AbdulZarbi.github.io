@@ -1,114 +1,271 @@
 ---
 title: "Portfolio"
-subtitle: "Featured Projects & Case Studies"
+subtitle: "Featured Data Analysis & Visualization Projects"
+toc: false
 ---
 
-## Data Analysis & Visualization Projects
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
 
-### Project 1: Market Research Dashboard for NGO Programs
-**Role:** Lead Data Analyst | **Duration:** 3 months | **Year:** 2024
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
 
-**Challenge:** A humanitarian organization needed to analyze survey data from 5,000+ respondents across multiple regions to assess program effectiveness and inform strategic planning.
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
 
-**Approach:**
-- Designed and implemented comprehensive survey using KoboToolbox
-- Cleaned and processed data using R and Excel
-- Created interactive Tableau dashboard for stakeholder presentation
-- Performed statistical analysis to identify key trends and insights
+.project-image {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
 
-**Tools Used:** R, Tableau, KoboToolbox, Excel
+.project-content {
+  padding: 1.5rem;
+}
 
-**Results:**
-- Identified 3 key areas for program improvement, leading to 25% increase in participant satisfaction
-- Dashboard enabled real-time monitoring for program managers
-- Findings presented to executive leadership and influenced $2M funding allocation
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
 
-[View Dashboard](#) | [Read Full Case Study](#)
+.project-category {
+  font-size: 0.875rem;
+  color: #7c3aed;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.btn-secondary:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #64748b;
+  font-size: 1.125rem;
+}
+</style>
+
+<div class="section-intro">
+Explore my data analysis and visualization projects showcasing expertise in R, Tableau, SQL, and statistical modeling. Each project demonstrates my ability to transform complex data into actionable insights.
+</div>
+
+<div class="project-grid">
+
+<!-- Project 1: Tableau Dashboard -->
+<div class="project-card">
+  <div class="project-image" style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);">
+    📊
+  </div>
+  <div class="project-content">
+    <div class="project-category">Tableau Visualization</div>
+    <h3 class="project-title">Market Research Interactive Dashboard</h3>
+    <p class="project-description">
+      Comprehensive Tableau dashboard analyzing survey data from 5,000+ respondents across multiple regions. Features interactive filters, trend analysis, and key performance indicators for stakeholder decision-making.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">Tableau</span>
+      <span class="tech-tag">Data Visualization</span>
+      <span class="tech-tag">KPI Tracking</span>
+    </div>
+    <div class="project-links">
+      <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" target="_blank" class="project-btn btn-primary">View Dashboard</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2: GitHub Project 1 -->
+<div class="project-card">
+  <div class="project-image" style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);">
+    📈
+  </div>
+  <div class="project-content">
+    <div class="project-category">R Analysis</div>
+    <h3 class="project-title">Customer Segmentation Analysis</h3>
+    <p class="project-description">
+      Statistical clustering analysis using R to identify distinct customer segments from 2,000+ survey responses. Implemented K-means clustering and created data visualizations to guide targeted marketing strategies.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">R</span>
+      <span class="tech-tag">ggplot2</span>
+      <span class="tech-tag">Statistical Modeling</span>
+      <span class="tech-tag">Clustering</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/AbdulZarbi/PROJECT_NAME_1" target="_blank" class="project-btn btn-primary">View Code</a>
+      <a href="#" class="project-btn btn-secondary">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3: GitHub Project 2 -->
+<div class="project-card">
+  <div class="project-image" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);">
+    🗃️
+  </div>
+  <div class="project-content">
+    <div class="project-category">SQL & Database</div>
+    <h3 class="project-title">Survey Data ETL Pipeline</h3>
+    <p class="project-description">
+      Automated data pipeline using SQL to clean, transform, and load survey data from multiple sources. Reduced data processing time by 60% and improved data quality through validation checks and error handling.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Data Cleaning</span>
+      <span class="tech-tag">ETL</span>
+      <span class="tech-tag">Automation</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/AbdulZarbi/PROJECT_NAME_2" target="_blank" class="project-btn btn-primary">View Code</a>
+      <a href="#" class="project-btn btn-secondary">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4: GitHub Project 3 -->
+<div class="project-card">
+  <div class="project-image" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);">
+    🔍
+  </div>
+  <div class="project-content">
+    <div class="project-category">Research Analysis</div>
+    <h3 class="project-title">Health Program Impact Evaluation</h3>
+    <p class="project-description">
+      Mixed-methods research project evaluating health intervention effectiveness across 15 clinics. Combined quantitative statistical analysis with qualitative coding using R and NVivo to deliver comprehensive insights.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">R</span>
+      <span class="tech-tag">NVivo</span>
+      <span class="tech-tag">Statistical Testing</span>
+      <span class="tech-tag">Regression Analysis</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/AbdulZarbi/PROJECT_NAME_3" target="_blank" class="project-btn btn-primary">View Code</a>
+      <a href="#" class="project-btn btn-secondary">Read More</a>
+    </div>
+  </div>
+</div>
+
+</div>
 
 ---
 
-### Project 2: Consumer Behavior Analysis
-**Role:** Research Analyst | **Duration:** 2 months | **Year:** 2023
-
-**Challenge:** Client needed to understand purchasing patterns and customer segments to optimize marketing strategy.
-
-**Approach:**
-- Conducted mixed-methods research (surveys + focus groups)
-- Analyzed 2,000+ survey responses using statistical modeling
-- Performed cluster analysis to identify distinct customer segments
-- Created data visualizations to communicate findings
-
-**Tools Used:** R, Excel, NVivo, SurveyMonkey
-
-**Results:**
-- Identified 4 distinct customer segments with unique preferences
-- Recommendations led to 15% improvement in campaign conversion rates
-- Delivered actionable insights for targeted marketing strategy
-
-[View Analysis](#) | [Download Report](#)
-
----
-
-### Project 3: Health Services Impact Evaluation
-**Role:** Senior Researcher | **Duration:** 6 months | **Year:** 2022
-
-**Challenge:** Evaluate the impact of a health intervention program across 15 clinics serving 10,000+ patients.
-
-**Approach:**
-- Designed pre/post evaluation framework
-- Collected and analyzed quantitative health outcome data
-- Conducted qualitative interviews with 50+ beneficiaries
-- Performed statistical significance testing and regression analysis
-
-**Tools Used:** R, SPSS, AdvanceMD, ClientTrack, NVivo
-
-**Results:**
-- Documented 40% improvement in key health indicators
-- Findings published in peer-reviewed journal
-- Program model adopted by 5 additional organizations
-
-[Read Publication](#) | [View Methodology](#)
-
-### Sample Visualizations
-
-*[Include 2-3 embedded charts/dashboards here using Quarto's visualization capabilities]*
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-
-# Example: Load your actual project data and create visualizations
-# library(ggplot2)
-# library(plotly)
-# 
-# Add your real visualizations here
-```
-
----
-
-### Skills Demonstrated
+## Skills Demonstrated Across Projects
 
 ::: {.grid}
 
-::: {.g-col-6}
-**Research & Analysis**
+::: {.g-col-12 .g-col-md-4}
+### 📊 Data Visualization
+- Interactive Tableau dashboards
+- Statistical charts with ggplot2
+- Executive-ready presentations
+- KPI tracking & monitoring
+:::
 
-- Survey Design
-- Statistical Modeling
-- Mixed Research Methods 
-- Impact Evaluation
+::: {.g-col-12 .g-col-md-4}
+### 🔬 Statistical Analysis
+- Regression modeling
+- Cluster analysis
+- Hypothesis testing
+- Predictive analytics
+:::
 
-**Data & Tools**
-
-- Data Cleaning & Processing
-- Interactive Dashboards
-- Data Visualization
-- Database Management
+::: {.g-col-12 .g-col-md-4}
+### 🛠️ Technical Tools
+- R & RStudio
+- Tableau & Excel
+- SQL databases
+- Quarto & R Markdown
 :::
 
 :::
 
 ---
 
-*Interested in working together? [Contact me](contact.qmd) to discuss your project needs.*
+<div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 12px;">
+  <h3 style="color: #1e293b; margin-bottom: 1rem;">Interested in Working Together?</h3>
+  <p style="color: #64748b; margin-bottom: 1.5rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+  <a href="contact.qmd" class="project-btn btn-primary" style="margin-right: 1rem;">Get In Touch</a>
+  <a href="Abdul_Zarbi_Resume.pdf" class="project-btn btn-secondary">Download Resume</a>
+</div>
+
