@@ -30,6 +30,9 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
+      - icon: bar-chart-fill
+        href: https://public.tableau.com/app/profile/abdul.zarbi
+        aria-label: Tableau
         
   page-footer:
     left: "Copyright © Abdul Zarbi 2025"
@@ -38,7 +41,9 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
-
+      - icon: bar-chart-fill
+        href: https://public.tableau.com/app/profile/abdul.zarbi
+        aria-label: Tableau
 format:
   html:
     theme: cosmo
