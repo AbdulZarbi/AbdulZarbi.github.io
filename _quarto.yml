@@ -41,9 +41,7 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
-      - text: "Tableau"
-        href: https://public.tableau.com/app/profile/abdul.zarbi
-        aria-label: Tableau
+
 format:
   html:
     theme: cosmo
