@@ -30,7 +30,7 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
-      - icon: bar-chart-fill
+      - text: "Tableau"
         href: https://public.tableau.com/app/profile/abdul.zarbi
         aria-label: Tableau
         
@@ -41,7 +41,7 @@ website:
         href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
-      - icon: bar-chart-fill
+      - text: "Tableau"
         href: https://public.tableau.com/app/profile/abdul.zarbi
         aria-label: Tableau
 format:
