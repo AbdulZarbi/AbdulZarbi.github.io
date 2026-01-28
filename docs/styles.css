@@ -753,3 +753,24 @@ a {
 #quarto-content ul {
   text-align: left !important;
 }
+/* ============================================
+   CONSISTENT TEXT COLOR ON HOME PAGE
+   ============================================ */
+
+/* Make ALL text (including headings) the same color */
+#quarto-content h2,
+#quarto-content h3,
+#quarto-content h4,
+#quarto-content p,
+#quarto-content li {
+  color: var(--text-secondary) !important;  /* Same gray as body text */
+}
+
+/* Or if you want everything slightly darker for better readability */
+#quarto-content h2,
+#quarto-content h3,
+#quarto-content h4,
+#quarto-content p,
+#quarto-content li {
+  color: #64748b !important;  /* Medium gray */
+}
