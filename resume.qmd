@@ -4,6 +4,6 @@ subtitle: "Abdul Zarbi - Data Analyst & Researcher"
 ---
 
 ::: {.text-center}
-[📄 Download My Resume PDF](ZARBI_RESUME27.pdf){.btn .btn-primary}
+[📄 Download My Resume ](ZARBI_RESUME27.pdf){.btn .btn-primary}
 :::
 
