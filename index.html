@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
     <style>
         * {
             margin: 0;
@@ -16,7 +20,11 @@
 
         :root {
             --primary-blue: #4169E1;
-            --soft-purple: #9B7EBD;
+            --ai-purple: #9B7EBD;
+            --ai-teal: #5DADE2;
+            --ai-coral: #EC7063;
+            --ai-mint: #76D7C4;
+            --ai-gold: #F39C12;
             --deep-navy: #1E3A5F;
             --light-gray: #F5F7FA;
             --warm-white: #FEFEFE;
@@ -36,7 +44,7 @@
             font-size: 18px;
         }
 
-        /* Navigation */
+        /* Top Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -54,28 +62,89 @@
 
         .logo {
             font-family: 'Libre Baskerville', serif;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--deep-navy);
+            color: var(--primary-blue);
         }
 
-        .nav-links {
+        .nav-center {
             display: flex;
             gap: 2.5rem;
             list-style: none;
         }
 
-        .nav-links a {
+        .nav-center a {
             color: var(--text-dark);
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: 500;
             transition: color 0.3s ease;
+            position: relative;
         }
 
-        .nav-links a:hover,
-        .nav-links a.active {
+        .nav-center a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-center a:hover,
+        .nav-center a.active {
             color: var(--primary-blue);
+        }
+
+        .nav-center a.active::after {
+            width: 100%;
+        }
+
+        /* Social Icons Right Side */
+        .social-icons {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-gray);
+            border-radius: 50%;
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(65, 105, 225, 0.3);
+        }
+
+        .social-icon.github:hover {
+            background: #333;
+            color: white;
+        }
+
+        .social-icon.tableau:hover {
+            background: #E97627;
+        }
+
+        .social-icon.email:hover {
+            background: var(--primary-blue);
+            color: white;
         }
 
         /* Hero Section */
@@ -106,20 +175,20 @@
             z-index: 1;
         }
 
-        .hero-subtitle {
-            font-size: 1.1rem;
-            color: var(--primary-blue);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            margin-bottom: 1.5rem;
-        }
-
         h1 {
             font-family: 'Libre Baskerville', serif;
             font-size: 4rem;
             font-weight: 700;
             line-height: 1.2;
             color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            letter-spacing: 0.05em;
             margin-bottom: 2rem;
         }
 
@@ -169,7 +238,7 @@
             text-align: center;
         }
 
-        /* Skills Section - Inspired by Naledi's "Collect, Process, Visualise" */
+        /* Skills Section */
         .skills-section {
             background: white;
         }
@@ -266,7 +335,7 @@
         .portfolio-image {
             width: 100%;
             height: 240px;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--soft-purple) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--ai-purple) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -343,7 +412,7 @@
         }
 
         .expertise-card:hover {
-            border-left-color: var(--soft-purple);
+            border-left-color: var(--ai-purple);
             box-shadow: 0 10px 30px rgba(65, 105, 225, 0.1);
         }
 
@@ -365,36 +434,26 @@
             color: var(--text-muted);
         }
 
-        /* Testimonial Section */
-        .testimonial-section {
+        /* Location Map Section */
+        .location-section {
             background: white;
             text-align: center;
         }
 
-        .testimonial-content {
-            max-width: 800px;
+        .map-container {
+            max-width: 1200px;
             margin: 0 auto;
+            position: relative;
+            height: 350px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
 
-        blockquote {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 1.3rem;
-            font-style: italic;
-            line-height: 1.8;
-            color: var(--text-dark);
-            margin-bottom: 2rem;
-        }
-
-        .testimonial-author {
-            font-size: 1rem;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-
-        .testimonial-author strong {
-            color: var(--deep-navy);
-            display: block;
-            margin-bottom: 0.3rem;
+        #location-map {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
 
         /* Contact Section */
@@ -466,22 +525,26 @@
         }
 
         @media (max-width: 768px) {
-            body { font-size: 16px; }
-            
             nav {
+                flex-direction: column;
+                gap: 1rem;
                 padding: 1rem 4%;
             }
 
-            .nav-links {
+            .nav-center {
                 gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
-            .nav-links a {
-                font-size: 0.85rem;
+            .social-icons {
+                gap: 0.8rem;
             }
+
+            body { font-size: 16px; }
 
             .hero {
-                padding: 6rem 4% 3rem;
+                padding: 6rem 4% 4rem;
             }
 
             h1 { font-size: 2.2rem; }
@@ -494,9 +557,13 @@
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
+
+            .map-container {
+                height: 250px;
+            }
         }
 
-        /* Subtle Animations */
+        /* Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -510,26 +577,42 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Top Navigation -->
     <nav>
         <div class="logo">Abdul Zarbi</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#skills">What I Do</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav-center">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#skills" class="nav-link">What I Do</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="social-icons">
+            <a href="https://github.com/AbdulZarbi" target="_blank" class="social-icon github" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" class="social-icon tableau" title="Tableau">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMySURBVHgB7d1BTsJAFIDhGY4exBO4YuHOvQdw7VncuPUEnoATuHMHiScQTwCewBMYvqRN0gQKtJ3pzPd9SxYkQPj7pk+hMwYAAAAAAAAAAMQ1ijD3LN1L/5bepc/S1/S/C+n5/rn0Jp2nxxTBj8HX2AasP81I+pLOF6/NpJ+6lKZHBd3R9KjgPuHr0kb6HaCg/lDV2MZm7rH0VCrqYzrKdvbv6VitGUof+fF71p9a2u8w3w4bkY8o/9JiVNXY3DZKj5Lbj7kVR8UKTY91pGDWJa9WKlZoGqmIjfkPQrFCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQssvNj8DVuQz6i/MR+3j/N/cT+03z73R/S4/3z+fH2tZ30If3uqxlL3/nnrf3g6+yT/fP5S3aK+f/nAQAAAAAAAAAA/j1/AJYSUdAm7WaTAAAAAElFTkSuQmCC" alt="Tableau">
+            </a>
+            <a href="mailto:Zarbi786@gmail.com" class="social-icon email" title="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+            </a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <canvas id="network-canvas"></canvas>
         <div class="hero-content">
-            <div class="hero-subtitle">Data Analyst & Researcher</div>
             <h1>Abdul Zarbi</h1>
+            <div class="hero-subtitle">Data Analyst & Researcher</div>
             <p class="hero-description">
-                Collect, process, analyze and present data — from supporting everyday business decisions to driving strategic change
+                Collect, process, analyse and present data — Transforming data into strategic insights
             </p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
@@ -538,6 +621,7 @@
     <!-- Skills Section -->
     <section class="skills-section" id="skills">
         <div class="section-container">
+            <h2>What I Do</h2>
             <div class="skills-grid">
                 <div class="skill-item fade-in">
                     <h3>Collect</h3>
@@ -758,20 +842,11 @@
         </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
+    <!-- Location Map Section -->
+    <section class="location-section">
         <div class="section-container">
-            <div class="testimonial-content fade-in">
-                <blockquote>
-                    "Abdul's ability to transform complex research data into clear, actionable insights has been 
-                    invaluable. His expertise in survey design and data analysis helped us make evidence-driven 
-                    decisions that significantly improved our program outcomes. Communication was consistently clear 
-                    and prompt, making the whole process very easy to manage."
-                </blockquote>
-                <div class="testimonial-author">
-                    <strong>Dr. Sarah Mitchell</strong>
-                    Program Director, International Development Organization
-                </div>
+            <div class="map-container">
+                <div id="location-map"></div>
             </div>
         </div>
     </section>
@@ -787,7 +862,8 @@
             <div class="contact-links">
                 <a href="mailto:zarbi786@gmail.com" class="contact-link">Email Me</a>
                 <a href="https://www.linkedin.com/in/abdulzarbi" target="_blank" class="contact-link">LinkedIn</a>
-                <a href="tel:+17372808077" class="contact-link">Call Me</a>
+                <a href="https://github.com/AbdulZarbi" target="_blank" class="contact-link">GitHub</a>
+                <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" class="contact-link">Tableau</a>
                 <a href="docs/ZARBI_RESUME27.pdf" class="contact-link" download>Download Resume</a>
             </div>
         </div>
@@ -815,14 +891,14 @@
 
         // Active nav link highlighting
         const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-links a');
+        const navLinks = document.querySelectorAll('.nav-link');
 
         window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 100)) {
+                if (pageYOffset >= (sectionTop - 150)) {
                     current = section.getAttribute('id');
                 }
             });
@@ -835,7 +911,7 @@
             });
         });
 
-        // Fade-in animation on scroll
+        // Fade-in animation
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -853,18 +929,17 @@
             observer.observe(el);
         });
 
-        // Handle missing images gracefully
+        // Handle missing images
         document.querySelectorAll('img').forEach(img => {
             img.addEventListener('error', function() {
                 this.style.display = 'none';
             });
         });
 
-        // Animated Network Graph Background
+        // Animated Network Graph with 100 AI-Colored Nodes
         const canvas = document.getElementById('network-canvas');
         const ctx = canvas.getContext('2d');
         
-        // Set canvas size
         function resizeCanvas() {
             canvas.width = canvas.offsetWidth;
             canvas.height = canvas.offsetHeight;
@@ -872,30 +947,37 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Network configuration
         const nodes = [];
-        const nodeCount = 50;
-        const connectionDistance = 150;
+        const nodeCount = 100;
+        const connectionDistance = 120;
         
-        // Create nodes
+        // AI organic colors palette
+        const aiColors = [
+            'rgba(65, 105, 225, 0.8)',   // Blue
+            'rgba(155, 126, 189, 0.8)',  // Purple
+            'rgba(93, 173, 226, 0.8)',   // Teal
+            'rgba(236, 112, 99, 0.8)',   // Coral
+            'rgba(118, 215, 196, 0.8)',  // Mint
+            'rgba(243, 156, 18, 0.8)'    // Gold
+        ];
+        
         class Node {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.radius = Math.random() * 2 + 1;
+                this.vx = (Math.random() - 0.5) * 0.6;
+                this.vy = (Math.random() - 0.5) * 0.6;
+                this.radius = Math.random() * 2 + 1.5;
+                this.color = aiColors[Math.floor(Math.random() * aiColors.length)];
             }
             
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
                 
-                // Bounce off edges
                 if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
                 if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
                 
-                // Keep in bounds
                 this.x = Math.max(0, Math.min(canvas.width, this.x));
                 this.y = Math.max(0, Math.min(canvas.height, this.y));
             }
@@ -903,17 +985,22 @@
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(65, 105, 225, 0.6)';
+                ctx.fillStyle = this.color;
                 ctx.fill();
+                
+                // Add glow effect
+                ctx.shadowBlur = 8;
+                ctx.shadowColor = this.color;
+                ctx.fill();
+                ctx.shadowBlur = 0;
             }
         }
         
-        // Initialize nodes
+        // Create nodes
         for (let i = 0; i < nodeCount; i++) {
             nodes.push(new Node());
         }
         
-        // Draw connections between nearby nodes
         function drawConnections() {
             for (let i = 0; i < nodes.length; i++) {
                 for (let j = i + 1; j < nodes.length; j++) {
@@ -922,36 +1009,140 @@
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     
                     if (distance < connectionDistance) {
-                        const opacity = (1 - distance / connectionDistance) * 0.3;
+                        const opacity = (1 - distance / connectionDistance) * 0.35;
                         ctx.beginPath();
                         ctx.moveTo(nodes[i].x, nodes[i].y);
                         ctx.lineTo(nodes[j].x, nodes[j].y);
-                        ctx.strokeStyle = `rgba(65, 105, 225, ${opacity})`;
-                        ctx.lineWidth = 0.5;
+                        
+                        const gradient = ctx.createLinearGradient(
+                            nodes[i].x, nodes[i].y, 
+                            nodes[j].x, nodes[j].y
+                        );
+                        gradient.addColorStop(0, nodes[i].color.replace('0.8', opacity.toString()));
+                        gradient.addColorStop(1, nodes[j].color.replace('0.8', opacity.toString()));
+                        ctx.strokeStyle = gradient;
+                        ctx.lineWidth = 1;
                         ctx.stroke();
                     }
                 }
             }
         }
         
-        // Animation loop
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
-            // Update and draw all nodes
             nodes.forEach(node => {
                 node.update();
                 node.draw();
             });
             
-            // Draw connections
             drawConnections();
             
             requestAnimationFrame(animate);
         }
         
-        // Start animation
         animate();
+
+        // Leaflet.js World Map with Austin Location
+        function initWorldMap() {
+            // Austin, Texas coordinates
+            const austinCoords = [30.2672, -97.7431];
+            
+            // Initialize map centered on Austin with world view
+            const map = L.map('location-map', {
+                center: [20, 0],
+                zoom: 2,
+                scrollWheelZoom: false,
+                zoomControl: true,
+                attributionControl: true
+            });
+            
+            // Add tile layer (map style)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors',
+                maxZoom: 18,
+            }).addTo(map);
+            
+            // Create custom icon
+            const customIcon = L.divIcon({
+                className: 'custom-marker',
+                html: `
+                    <div style="position: relative;">
+                        <div style="
+                            position: absolute;
+                            top: -30px;
+                            left: -15px;
+                            width: 30px;
+                            height: 30px;
+                            background: #4169E1;
+                            border-radius: 50%;
+                            border: 3px solid white;
+                            box-shadow: 0 4px 12px rgba(65, 105, 225, 0.4);
+                            animation: pulse 2s infinite;
+                        "></div>
+                        <div style="
+                            position: absolute;
+                            top: -20px;
+                            left: -5px;
+                            width: 10px;
+                            height: 10px;
+                            background: white;
+                            border-radius: 50%;
+                        "></div>
+                    </div>
+                    <style>
+                        @keyframes pulse {
+                            0%, 100% { transform: scale(1); opacity: 1; }
+                            50% { transform: scale(1.2); opacity: 0.8; }
+                        }
+                    </style>
+                `,
+                iconSize: [30, 30],
+                iconAnchor: [15, 30]
+            });
+            
+            // Add marker for Austin
+            const marker = L.marker(austinCoords, { icon: customIcon }).addTo(map);
+            
+            // Add popup with custom styling
+            marker.bindPopup(`
+                <div style="
+                    font-family: 'Work Sans', sans-serif;
+                    text-align: center;
+                    padding: 8px;
+                ">
+                    <strong style="
+                        color: #4169E1;
+                        font-size: 16px;
+                        display: block;
+                        margin-bottom: 4px;
+                    ">Austin, Texas</strong>
+                    <span style="
+                        color: #6B7280;
+                        font-size: 13px;
+                    ">📍 Available for remote & local work</span>
+                </div>
+            `, {
+                className: 'custom-popup'
+            }).openPopup();
+            
+            // Add pulsing circle around Austin
+            L.circle(austinCoords, {
+                color: '#4169E1',
+                fillColor: '#4169E1',
+                fillOpacity: 0.15,
+                radius: 300000,
+                weight: 2
+            }).addTo(map);
+        }
+
+        // Load Leaflet.js and initialize map
+        const leafletScript = document.createElement('script');
+        leafletScript.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        leafletScript.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+        leafletScript.crossOrigin = '';
+        leafletScript.onload = initWorldMap;
+        document.head.appendChild(leafletScript);
     </script>
 </body>
 </html>
