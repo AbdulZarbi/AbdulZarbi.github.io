@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Zarbi — Data Analyst & Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #4169E1;
+            --soft-purple: #9B7EBD;
+            --deep-navy: #1E3A5F;
+            --light-gray: #F5F7FA;
+            --warm-white: #FEFEFE;
+            --text-dark: #2C3E50;
+            --text-muted: #6B7280;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: var(--warm-white);
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(65, 105, 225, 0.1);
+        }
+
+        .logo {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(135deg, rgba(245, 247, 250, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #network-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--deep-navy);
+            margin-bottom: 2rem;
+        }
+
+        .hero-description {
+            font-size: 1.35rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .cta-button:hover {
+            background: var(--deep-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(65, 105, 225, 0.3);
+        }
+
+        /* Section Base */
+        section {
+            padding: 6rem 5%;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        /* Skills Section - Inspired by Naledi's "Collect, Process, Visualise" */
+        .skills-section {
+            background: white;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .skill-item h3 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-item p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .skill-item strong {
+            color: var(--deep-navy);
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--light-gray);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Portfolio Grid */
+        .portfolio-section {
+            background: white;
+        }
+
+        .portfolio-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+        }
+
+        .portfolio-card {
+            background: var(--light-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(65, 105, 225, 0.15);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--soft-purple) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+        }
+
+        .portfolio-tag {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            background: rgba(65, 105, 225, 0.1);
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-description {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            color: var(--deep-navy);
+        }
+
+        .portfolio-link::after {
+            content: ' →';
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            background: var(--light-gray);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .expertise-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            border-left-color: var(--soft-purple);
+            box-shadow: 0 10px 30px rgba(65, 105, 225, 0.1);
+        }
+
+        .expertise-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-card h3 {
+            font-size: 1.3rem;
+            color: var(--deep-navy);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background: white;
+            text-align: center;
+        }
+
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        blockquote {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-author {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .testimonial-author strong {
+            color: var(--deep-navy);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--deep-navy);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+        }
+
+        .contact-description {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-link:hover {
+            background: white;
+            color: var(--deep-navy);
+            border-color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: #1A2F4A;
+            padding: 2.5rem 5%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            h1 { font-size: 3rem; }
+            
+            .skills-grid,
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 16px; }
+            
+            nav {
+                padding: 1rem 4%;
+            }
+
+            .nav-links {
+                gap: 1.2rem;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+            }
+
+            .hero {
+                padding: 6rem 4% 3rem;
+            }
+
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 2rem; }
+            
+            .hero-description { font-size: 1.1rem; }
+
+            section { padding: 4rem 4%; }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Subtle Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Abdul Zarbi</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">What I Do</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="network-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-subtitle">Data Analyst & Researcher</div>
+            <h1>Abdul Zarbi</h1>
+            <p class="hero-description">
+                Collect, process, analyze and present data — from supporting everyday business decisions to driving strategic change
+            </p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-container">
+            <div class="skills-grid">
+                <div class="skill-item fade-in">
+                    <h3>Collect</h3>
+                    <p>
+                        Coming from a background in <strong>social research</strong> and <strong>market analysis</strong>, 
+                        I have theoretical and practical knowledge in <strong>survey design</strong> and impact assessment. 
+                        I have data collection and management experience with <strong>Kobo Toolbox, Advanced MD, Client Track,</strong> 
+                        and <strong>Survey Monkey</strong>.
+                    </p>
+                </div>
+
+                <div class="skill-item fade-in">
+                    <h3>Process</h3>
+                    <p>
+                        As a certified <strong>R and SQL analyst</strong>, I can offer support on improving existing 
+                        workflows and creation of new processes, covering <strong>data transformation, unification, 
+                        statistical modeling,</strong> and <strong>predictive analysis</strong>. I ensure data quality 
+                        standards at every phase of research.
+                    </p>
+                </div>
+
+                <div class="skill-item fade-in">
+                    <h3>Visualize</h3>
+                    <p>
+                        I am a <strong>Tableau Business Intelligence Analyst</strong> with extensive knowledge of 
+                        <strong>data visualization best practices</strong>. I have experience creating <strong>interactive 
+                        dashboards</strong> and <strong>compelling reports</strong> using Tableau, Excel, and R. I transform 
+                        complex data into clear, actionable insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>
+                        I am Abdul, a data analyst and social researcher passionate about working with organizations 
+                        that want to make effective use of their data; from the first ideas around what you want to 
+                        measure and how to capture data accurately, through data preparation, analysis and management, 
+                        all the way to impactful presentation of insights.
+                    </p>
+                    <p>
+                        With over <strong>10 years of experience</strong> in market research, survey administration, 
+                        and program evaluation, I help organizations understand their markets, customers, and impact. 
+                        My work combines rigorous statistical analysis with clear storytelling to deliver insights that matter.
+                    </p>
+                    <p>
+                        I'm currently expanding my expertise into <strong>AI and data science</strong>, bringing my 
+                        deep research background into cutting-edge analytics. I can support each step of the data 
+                        process to enable your organization in making evidence-driven decisions or share insights with new audiences.
+                    </p>
+                    <p>
+                        <strong>I am available for consulting projects and part-time engagements.</strong>
+                    </p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="images/Abdul.png" alt="Abdul Zarbi" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+            <h2>Portfolio</h2>
+            <p class="portfolio-intro">A sample of my work showcasing data visualization, research methodologies, and analytical capabilities</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">📊</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Tableau Public</span>
+                        <h3 class="portfolio-title">Interactive Data Dashboards</h3>
+                        <p class="portfolio-description">
+                            A collection of interactive visualizations demonstrating data storytelling, statistical 
+                            analysis, and insight communication across various domains including market research and social services.
+                        </p>
+                        <a href="https://public.tableau.com/app/profile/abdul.zarbi" target="_blank" class="portfolio-link">View Dashboards</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">💻</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">GitHub</span>
+                        <h3 class="portfolio-title">Data Analysis Projects</h3>
+                        <p class="portfolio-description">
+                            R programming projects, reproducible research workflows, and analytical scripts showcasing 
+                            technical proficiency in statistical computing, data manipulation, and research methodologies.
+                        </p>
+                        <a href="https://github.com/AbdulZarbi" target="_blank" class="portfolio-link">View Projects</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">📈</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Case Study</span>
+                        <h3 class="portfolio-title">USAID Program Evaluation</h3>
+                        <p class="portfolio-description">
+                            Comprehensive program evaluation including baseline, midline, and endline surveys ensuring 
+                            USAID data quality standards. Led research activities and provided technical support to partner organizations.
+                        </p>
+                        <a href="#contact" class="portfolio-link">Request Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">🔍</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Research</span>
+                        <h3 class="portfolio-title">Market Research Studies</h3>
+                        <p class="portfolio-description">
+                            Designed and executed comprehensive market research projects including survey design, 
+                            sample selection, data collection protocols, and actionable insights for strategic decision-making.
+                        </p>
+                        <a href="#contact" class="portfolio-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">📋</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Impact Assessment</span>
+                        <h3 class="portfolio-title">Social Services Analytics</h3>
+                        <p class="portfolio-description">
+                            Data-driven case management system serving 100+ clients, achieving 50% improvement in 
+                            service delivery through streamlined processes and evidence-based interventions.
+                        </p>
+                        <a href="#contact" class="portfolio-link">View Results</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">🎓</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Training</span>
+                        <h3 class="portfolio-title">Data Literacy Workshops</h3>
+                        <p class="portfolio-description">
+                            Developed and delivered training programs on survey design, data collection best practices, 
+                            and data visualization for non-profit organizations and research teams.
+                        </p>
+                        <a href="#contact" class="portfolio-link">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section">
+        <div class="section-container">
+            <h2>Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">📊</div>
+                    <h3>Statistical Analysis</h3>
+                    <p>
+                        Expert in quantitative and qualitative research methods, hypothesis testing, regression analysis, 
+                        and predictive modeling using R, SPSS, and Excel. Transform complex datasets into meaningful 
+                        patterns and actionable insights.
+                    </p>
+                </div>
+
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">📋</div>
+                    <h3>Survey Design & Implementation</h3>
+                    <p>
+                        Specialized in creating robust survey instruments, sampling methodologies, and data collection 
+                        protocols. Experienced with Kobo Toolbox, Survey Monkey, Qualtrics, and ODK for large-scale 
+                        data collection initiatives.
+                    </p>
+                </div>
+
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">🎯</div>
+                    <h3>Program Evaluation</h3>
+                    <p>
+                        Skilled in designing and implementing baseline, midline, and endline evaluations that measure 
+                        program impact and effectiveness. Ensure adherence to USAID and international donor data quality standards.
+                    </p>
+                </div>
+
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">📈</div>
+                    <h3>Data Visualization</h3>
+                    <p>
+                        Tableau Business Intelligence Analyst certified with expertise in creating interactive dashboards, 
+                        static infographics, and compelling data stories that communicate insights effectively to diverse audiences.
+                    </p>
+                </div>
+
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">🔍</div>
+                    <h3>Market Research</h3>
+                    <p>
+                        Comprehensive experience conducting market analysis, competitive research, and consumer insights 
+                        studies. Provide strategic recommendations based on rigorous data analysis and industry trends.
+                    </p>
+                </div>
+
+                <div class="expertise-card fade-in">
+                    <div class="expertise-icon">🤝</div>
+                    <h3>Stakeholder Engagement</h3>
+                    <p>
+                        Strong track record of collaborating with government agencies, NGOs, international organizations, 
+                        and community partners. Excel at translating technical findings into accessible insights for 
+                        non-technical audiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="section-container">
+            <div class="testimonial-content fade-in">
+                <blockquote>
+                    "Abdul's ability to transform complex research data into clear, actionable insights has been 
+                    invaluable. His expertise in survey design and data analysis helped us make evidence-driven 
+                    decisions that significantly improved our program outcomes. Communication was consistently clear 
+                    and prompt, making the whole process very easy to manage."
+                </blockquote>
+                <div class="testimonial-author">
+                    <strong>Dr. Sarah Mitchell</strong>
+                    Program Director, International Development Organization
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <h2>Get in Touch</h2>
+            <p class="contact-description">
+                Do you have a project I can help you with? I'm available for consulting projects and 
+                part-time engagements. Let's discuss how data-driven insights can support your organization's goals.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:zarbi786@gmail.com" class="contact-link">Email Me</a>
+                <a href="https://www.linkedin.com/in/abdulzarbi" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="tel:+17372808077" class="contact-link">Call Me</a>
+                <a href="docs/ZARBI_RESUME27.pdf" class="contact-link" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Abdul Zarbi. All rights reserved. | Austin, Texas</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active nav link highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Handle missing images gracefully
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+            });
+        });
+
+        // Animated Network Graph Background
+        const canvas = document.getElementById('network-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Network configuration
+        const nodes = [];
+        const nodeCount = 50;
+        const connectionDistance = 150;
+        
+        // Create nodes
+        class Node {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.radius = Math.random() * 2 + 1;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                // Bounce off edges
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                
+                // Keep in bounds
+                this.x = Math.max(0, Math.min(canvas.width, this.x));
+                this.y = Math.max(0, Math.min(canvas.height, this.y));
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(65, 105, 225, 0.6)';
+                ctx.fill();
+            }
+        }
+        
+        // Initialize nodes
+        for (let i = 0; i < nodeCount; i++) {
+            nodes.push(new Node());
+        }
+        
+        // Draw connections between nearby nodes
+        function drawConnections() {
+            for (let i = 0; i < nodes.length; i++) {
+                for (let j = i + 1; j < nodes.length; j++) {
+                    const dx = nodes[i].x - nodes[j].x;
+                    const dy = nodes[i].y - nodes[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < connectionDistance) {
+                        const opacity = (1 - distance / connectionDistance) * 0.3;
+                        ctx.beginPath();
+                        ctx.moveTo(nodes[i].x, nodes[i].y);
+                        ctx.lineTo(nodes[j].x, nodes[j].y);
+                        ctx.strokeStyle = `rgba(65, 105, 225, ${opacity})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        // Animation loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Update and draw all nodes
+            nodes.forEach(node => {
+                node.update();
+                node.draw();
+            });
+            
+            // Draw connections
+            drawConnections();
+            
+            requestAnimationFrame(animate);
+        }
+        
+        // Start animation
+        animate();
+    </script>
+</body>
+</html>
