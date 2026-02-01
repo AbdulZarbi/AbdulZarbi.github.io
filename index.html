@@ -149,11 +149,11 @@
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
+            min-height: 75vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 8rem 5% 4rem;
+            padding: 8rem 5% 2rem;
             background: linear-gradient(135deg, rgba(245, 247, 250, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
             position: relative;
             overflow: hidden;
@@ -169,7 +169,7 @@
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 800px;
             text-align: center;
             position: relative;
             z-index: 1;
@@ -211,6 +211,7 @@
             border-radius: 4px;
             transition: all 0.3s ease;
             letter-spacing: 0.02em;
+            margin-top: 0.5rem;
         }
 
         .cta-button:hover {
@@ -221,7 +222,7 @@
 
         /* Section Base */
         section {
-            padding: 6rem 5%;
+            padding: 4rem 5%;
         }
 
         .section-container {
@@ -234,20 +235,22 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--deep-navy);
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             text-align: center;
         }
 
         /* Skills Section */
         .skills-section {
             background: white;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
         }
 
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 4rem;
-            margin-top: 3rem;
+            gap: 3rem;
+            margin-top: 0;
         }
 
         .skill-item h3 {
@@ -512,6 +515,15 @@
         @media (max-width: 1024px) {
             h1 { font-size: 3rem; }
             
+            .hero {
+                min-height: 70vh;
+                padding: 7rem 5% 2rem;
+            }
+
+            .hero-content {
+                max-width: 700px;
+            }
+            
             .skills-grid,
             .expertise-grid {
                 grid-template-columns: 1fr;
@@ -544,7 +556,13 @@
             body { font-size: 16px; }
 
             .hero {
-                padding: 6rem 4% 4rem;
+                padding: 6rem 4% 2rem;
+                min-height: 65vh;
+            }
+
+            .hero-content {
+                text-align: center;
+                max-width: 100%;
             }
 
             h1 { font-size: 2.2rem; }
@@ -552,7 +570,11 @@
             
             .hero-description { font-size: 1.1rem; }
 
-            section { padding: 4rem 4%; }
+            section { padding: 3rem 4%; }
+
+            .skills-section {
+                padding-top: 2rem;
+            }
 
             .portfolio-grid {
                 grid-template-columns: 1fr;
@@ -594,7 +616,28 @@
                 </svg>
             </a>
             <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" class="social-icon tableau" title="Tableau">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMySURBVHgB7d1BTsJAFIDhGY4exBO4YuHOvQdw7VncuPUEnoATuHMHiScQTwCewBMYvqRN0gQKtJ3pzPd9SxYkQPj7pk+hMwYAAAAAAAAAAMQ1ijD3LN1L/5bepc/S1/S/C+n5/rn0Jp2nxxTBj8HX2AasP81I+pLOF6/NpJ+6lKZHBd3R9KjgPuHr0kb6HaCg/lDV2MZm7rH0VCrqYzrKdvbv6VitGUof+fF71p9a2u8w3w4bkY8o/9JiVNXY3DZKj5Lbj7kVR8UKTY91pGDWJa9WKlZoGqmIjfkPQrFCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQsskOxQlOxyA7FCk3FIjsUKzQVi+xQrNBULLJDsUJTscgOxQpNxSI7FCs0FYvsUKzQVCyyQ7FCU7HIDsUKTcUiOxQrNBWL7FCs0FQssvNj8DVuQz6i/MR+3j/N/cT+03z73R/S4/3z+fH2tZ30If3uqxlL3/nnrf3g6+yT/fP5S3aK+f/nAQAAAAAAAAAA/j1/AJYSUdAm7WaTAAAAAElFTkSuQmCC" alt="Tableau">
+                <svg width="20" height="20" viewBox="0 0 150 150" fill="currentColor">
+                    <rect x="67" y="12" width="16" height="46" fill="#E8762D"/>
+                    <rect x="50" y="29" width="50" height="12" fill="#E8762D"/>
+                    <rect x="67" y="0" width="16" height="8" fill="#E8762D"/>
+                    <rect x="42" y="29" width="8" height="12" fill="#E8762D"/>
+                    <rect x="100" y="29" width="8" height="12" fill="#E8762D"/>
+                    <rect x="67" y="62" width="16" height="8" fill="#E8762D"/>
+                    <rect x="18" y="50" width="16" height="46" fill="#7199A6"/>
+                    <rect x="0" y="67" width="50" height="12" fill="#7199A6"/>
+                    <rect x="18" y="38" width="16" height="8" fill="#7199A6"/>
+                    <rect x="18" y="100" width="16" height="8" fill="#7199A6"/>
+                    <rect x="116" y="50" width="16" height="46" fill="#5B6591"/>
+                    <rect x="100" y="67" width="50" height="12" fill="#5B6591"/>
+                    <rect x="116" y="38" width="16" height="8" fill="#5B6591"/>
+                    <rect x="116" y="100" width="16" height="8" fill="#5B6591"/>
+                    <rect x="67" y="82" width="16" height="46" fill="#C72037"/>
+                    <rect x="50" y="99" width="50" height="12" fill="#C72037"/>
+                    <rect x="67" y="132" width="16" height="8" fill="#C72037"/>
+                    <rect x="42" y="99" width="8" height="12" fill="#C72037"/>
+                    <rect x="100" y="99" width="8" height="12" fill="#C72037"/>
+                    <rect x="67" y="70" width="16" height="8" fill="#C72037"/>
+                </svg>
             </a>
             <a href="mailto:Zarbi786@gmail.com" class="social-icon email" title="Email">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -621,14 +664,13 @@
     <!-- Skills Section -->
     <section class="skills-section" id="skills">
         <div class="section-container">
-            <h2>What I Do</h2>
             <div class="skills-grid">
                 <div class="skill-item fade-in">
                     <h3>Collect</h3>
                     <p>
                         Coming from a background in <strong>social research</strong> and <strong>market analysis</strong>, 
                         I have theoretical and practical knowledge in <strong>survey design</strong> and impact assessment. 
-                        I have data collection and management experience with <strong>Kobo Toolbox, Advanced MD, Client Track,</strong> 
+                        I have data collection and management experience with <strong>Kobo Toolbox, ODK, </strong> 
                         and <strong>Survey Monkey</strong>.
                     </p>
                 </div>
@@ -948,7 +990,7 @@
         window.addEventListener('resize', resizeCanvas);
 
         const nodes = [];
-        const nodeCount = 120;
+        const nodeCount = 100;
         const connectionDistance = 120;
         
         // AI organic colors palette
@@ -1052,7 +1094,7 @@
             const map = L.map('location-map', {
                 center: [20, 0],
                 zoom: 2,
-                scrollWheelZoom: true,
+                scrollWheelZoom: false,
                 zoomControl: true,
                 attributionControl: true
             });
