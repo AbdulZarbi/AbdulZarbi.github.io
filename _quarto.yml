@@ -8,7 +8,8 @@ website:
   title: "Abdul Zarbi"
   description: "Data Analyst & Researcher Portfolio"
   favicon: images/Abdul.png
-  google-analytics: "G-XXXXXXX" 
+  google-analytics: "G-R3GPYRD854"
+  cookie-consent: true
   
   navbar:
     background: primary
