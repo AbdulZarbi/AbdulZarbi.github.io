@@ -10,5 +10,11 @@
 /docs/
 /_freeze/
 
+# Old renv package library left on disk after renv was removed (safe to delete locally)
+/renv/
+
+# Claude Code working folders
+.claude/
+
 # macOS
 .DS_Store

@@ -12,7 +12,8 @@ Personal portfolio site of Abdul Zarbi, Senior Data Analyst (Austin, Texas). Liv
 | `_quarto.yml` | Site settings: navbar, footer, which files get published. |
 | `_includes/analytics.html` | Cookie banner + Google Analytics for Quarto pages (only runs after consent). |
 | `images/` | Profile photo and favicon. |
-| `.github/workflows/publish.yml` | On every push to `main`, GitHub Actions runs `quarto render` and publishes to the `gh-pages` branch, which serves the site. |
+| `.github/workflows/publish.yml` | On every push to `main`, GitHub Actions runs `quarto render` and publishes to the `gh-pages` branch, which serves the site. Only Quarto is installed: the site has no R code. |
+| `AbdulZarbi.github.io.Rproj` | Opens the repo as an RStudio project (for the Git tab). Not part of the website. |
 
 The build output (`_site/`) is never committed; GitHub Actions makes it.
 
