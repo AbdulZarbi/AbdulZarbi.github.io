@@ -1,0 +1,21 @@
+---
+title: "Bookshelf"
+subtitle: "Books I'm reading on data, visualization and beyond, each with a short note on what I took away."
+page-layout: full
+title-block-banner: true
+listing:
+  id: bookshelf
+  contents: books.yml
+  type: grid
+  grid-columns: 3
+  image-height: 300px
+  fields: [image, title, author, categories, description]
+  sort: "date desc"
+  categories: true
+  filter-ui: false
+  sort-ui: false
+  max-description-length: 400
+---
+
+::: {#bookshelf}
+:::

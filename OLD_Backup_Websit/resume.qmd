@@ -1,9 +1,0 @@
----
-title: "Resume"
-subtitle: "Abdul Zarbi - Data Analyst & Researcher"
----
-
-::: {.text-center}
-[📄 Download My Resume ](ZARBI_RESUME27.pdf){.btn .btn-primary}
-:::
-

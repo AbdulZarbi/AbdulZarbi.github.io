@@ -1,55 +1,52 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
+  # The homepage (index.html) is hand-written HTML, so Quarto only copies it.
+  # Quarto renders the .qmd pages (for now just the Bookshelf).
   resources:
-    - "ZARBI_RESUME27.pdf"
-    - "images/*"
+    - index.html
+    - CNAME
+    - images/*
+
 website:
   title: "Abdul Zarbi"
-  description: "Data Analyst & Researcher Portfolio"
-  favicon: images/Abdul.png
-  google-analytics: "G-R3GPYRD854"
-  cookie-consent: true
-  
+  description: "Senior Data Analyst in healthcare and the public sector, Austin, Texas"
+  site-url: https://abdulzarbi.com
+  favicon: images/favicon.png
+  open-graph: true
+
   navbar:
-    background: primary
-    search: true
+    title: "Abdul Zarbi"
+    href: index.html
     left:
       - text: "Home"
-        href: index.qmd
-      - text: "About Me"
-        href: about.qmd
+        href: index.html
       - text: "Portfolio"
-        href: portfolio.qmd
-      - text: "Resume"
-        href: resume.qmd
-      - text: "Research"
-        href: research.qmd
+        href: index.html#portfolio
+      - text: "Bookshelf"
+        href: books.qmd
       - text: "Contact"
-        href: contact.qmd
+        href: index.html#contact
     right:
-      - icon: linkedin
-        href: https://www.linkedin.com/in/abdulzarbi
       - icon: github
         href: https://github.com/AbdulZarbi
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/abdulzarbi
+        aria-label: LinkedIn
+      - icon: medium
+        href: https://medium.com/@abdulwasayzarbi
+        aria-label: Medium
       - text: "Tableau"
-        href: https://public.tableau.com/app/profile/abdul.zarbi
-        aria-label: Tableau
-        
+        href: https://public.tableau.com/app/profile/abdul.zarbi/vizzes
+
   page-footer:
-    left: "Copyright © Abdul Zarbi 2025"
-    right: 
-      - icon: linkedin
-        href: https://www.linkedin.com/in/abdulzarbi
-      - icon: github
-        href: https://github.com/AbdulZarbi
+    center: "© Abdul Zarbi · Austin, Texas"
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: false
-    toc-depth: 3
-    code-copy: true
-    code-fold: true
+    # Same cookie banner + consent-gated Google Analytics as the homepage
+    include-in-header: _includes/analytics.html
     link-external-newwindow: true

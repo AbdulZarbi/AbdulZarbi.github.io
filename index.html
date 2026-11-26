@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Cookiebot consent banner -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="23f3dd84-ce94-4226-9269-21499741115a" type="text/javascript" async></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GPYRD854"></script>
-    <script>
+    <!-- Google Analytics: type="text/plain" keeps it switched off until the visitor accepts "statistics" cookies.
+         Keep in sync with _includes/analytics.html (used by the Quarto pages). -->
+    <script type="text/plain" data-cookieconsent="statistics" async src="https://www.googletagmanager.com/gtag/js?id=G-R3GPYRD854"></script>
+    <script type="text/plain" data-cookieconsent="statistics">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -12,7 +14,17 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Zarbi — Data Analyst & Researcher</title>
+    <title>Abdul Zarbi | Senior Data Analyst</title>
+    <meta name="description" content="Abdul Zarbi is a Senior Data Analyst in Austin, Texas, building Tableau and Power BI dashboards and analysis with SQL, SAS and R for healthcare and the public sector.">
+    <link rel="canonical" href="https://abdulzarbi.com/">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Open Graph: the title, text and photo LinkedIn and others show when the link is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abdulzarbi.com/">
+    <meta property="og:title" content="Abdul Zarbi | Senior Data Analyst">
+    <meta property="og:description" content="Dashboards and analysis for healthcare and the public sector: Tableau, Power BI, SQL, SAS and R.">
+    <meta property="og:image" content="https://abdulzarbi.com/images/Abdul.jpg">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -237,6 +249,31 @@
             box-shadow: 0 10px 25px rgba(65, 105, 225, 0.3);
         }
 
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            margin-left: 0.75rem;
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .hero-tools {
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            color: var(--deep-navy);
+            margin: -1.5rem 0 2.5rem;
+        }
+
+        .logo a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         /* Section Base */
         section {
             padding: 4rem 5%;
@@ -411,6 +448,37 @@
             content: ' →';
         }
 
+        .portfolio-image svg {
+            width: 72px;
+            height: 72px;
+            color: white;
+        }
+
+        .portfolio-status {
+            display: inline-block;
+            margin-left: 0.5rem;
+            padding: 0.4rem 0.9rem;
+            background: rgba(243, 156, 18, 0.15);
+            color: #9A6200;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        .portfolio-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .portfolio-more {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 3.5rem;
+        }
+
         /* Expertise Section */
         .expertise-section {
             background: var(--light-gray);
@@ -437,7 +505,9 @@
         }
 
         .expertise-icon {
-            font-size: 2.5rem;
+            width: 40px;
+            height: 40px;
+            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
 
@@ -528,7 +598,29 @@
             font-size: 0.9rem;
         }
 
+        .logo, .nav-center a {
+            white-space: nowrap;
+        }
+
         /* Responsive Design */
+        @media (max-width: 1180px) {
+            .nav-center { gap: 1.3rem; }
+            .social-icons { gap: 0.5rem; }
+            .social-icon { width: 34px; height: 34px; }
+        }
+
+        /* Small screens: the menu wraps onto several rows, so it scrolls away with the page
+           instead of staying pinned on top of the content */
+        @media (max-width: 960px) {
+            nav {
+                position: relative;
+                flex-direction: column;
+                gap: 0.6rem;
+                padding: 0.9rem 4%;
+            }
+            section.hero { padding-top: 3rem; min-height: auto; }
+        }
+
         @media (max-width: 1024px) {
             h1 { font-size: 3rem; }
             
@@ -597,6 +689,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .cta-button.secondary {
+                margin-left: 0;
+            }
+
             .map-container {
                 height: 250px;
             }
@@ -613,17 +709,24 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Respect visitors who turn off motion in their device settings */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .fade-in { opacity: 1; transform: none; transition: none; }
+            .cta-button, .portfolio-card, .social-icon { transition: none; }
+        }
     </style>
 </head>
 <body>
     <!-- Top Navigation -->
     <nav>
-        <div class="logo">Abdul Zarbi</div>
+        <div class="logo"><a href="#home">Abdul Zarbi</a></div>
         <ul class="nav-center">
-            <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#skills" class="nav-link">What I Do</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="books.html" class="nav-link">Bookshelf</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="social-icons">
@@ -666,7 +769,7 @@
                      <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                 </svg>
             </a>
-            <a href="mailto:Zarbi786@gmail.com" class="social-icon email" title="Email">
+            <a href="mailto:zarbi786@gmail.com" class="social-icon email" title="Email">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                     <polyline points="22,6 12,13 2,6"/>
@@ -680,11 +783,13 @@
         <canvas id="network-canvas"></canvas>
         <div class="hero-content">
             <h1>Abdul Zarbi</h1>
-            <div class="hero-subtitle">Data Analyst & Researcher</div>
+            <div class="hero-subtitle">Senior Data Analyst · Healthcare &amp; Public Sector</div>
             <p class="hero-description">
-                Collect, process, analyse and present data — Transforming data into strategic insights
+                I turn complex public-sector data into dashboards and analysis that people can act on.
             </p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <p class="hero-tools">Tableau · Power BI · SQL · SAS · R</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+            <a href="#contact" class="cta-button secondary">Get in Touch</a>
         </div>
     </section>
 
@@ -695,30 +800,29 @@
                 <div class="skill-item fade-in">
                     <h3>Collect</h3>
                     <p>
-                        Coming from a background in <strong>social research</strong> and <strong>market analysis</strong>, 
-                        I have theoretical and practical knowledge in <strong>survey design</strong> and impact assessment. 
-                        I have data collection and management experience with <strong>Kobo Toolbox, Advanced MD, Client Track,</strong> 
-                        and <strong>Survey Monkey</strong>.
+                        With a background in <strong>social research</strong> and <strong>market analysis</strong>,
+                        I design <strong>surveys</strong> and data collection that capture the right data the first time.
+                        I have collected and managed data with <strong>Kobo Toolbox, Open Data Kit, Survey Monkey,
+                        Advanced MD</strong> and <strong>Client Track</strong>.
                     </p>
                 </div>
 
                 <div class="skill-item fade-in">
                     <h3>Process</h3>
                     <p>
-                        As a certified <strong>R and SQL analyst</strong>, I can offer support on improving existing 
-                        workflows and creation of new processes, covering <strong>data transformation, unification, 
-                        statistical modeling,</strong> and <strong>predictive analysis</strong>. I ensure data quality 
-                        standards at every phase of research.
+                        I clean, join and transform data with <strong>SQL (Oracle, MySQL)</strong>, <strong>SAS</strong>
+                        and <strong>R</strong>, and apply <strong>statistical analysis</strong> to find what matters.
+                        Data-quality checks are built into every step. I hold the
+                        <strong>Google Data Analytics Professional Certificate</strong>.
                     </p>
                 </div>
 
                 <div class="skill-item fade-in">
                     <h3>Visualize</h3>
                     <p>
-                        I am a <strong>Tableau Business Intelligence Analyst</strong> with extensive knowledge of 
-                        <strong>data visualization best practices</strong>. I have experience creating <strong>interactive 
-                        dashboards</strong> and <strong>compelling reports</strong> using Tableau, Excel, and R. I transform 
-                        complex data into clear, actionable insights.
+                        I design, build and maintain <strong>interactive dashboards</strong> in <strong>Tableau</strong>
+                        and <strong>Power BI</strong>, and support the people who use them every day. I hold the
+                        <strong>Tableau Business Intelligence Analyst Professional Certificate</strong>.
                     </p>
                 </div>
             </div>
@@ -732,27 +836,28 @@
             <div class="about-content">
                 <div class="about-text fade-in">
                     <p>
-                        I am Abdul, a data analyst and market researcher passionate about working with organizations 
-                        that want to make effective use of their data; from the first ideas around how to find a solution for 
-                        problems and how to capture data accurately, through data preparation, analysis and management, 
-                        all the way to impactful presentation of insights.
+                        I'm Abdul, a <strong>Senior Data Analyst at the Texas Health and Human Services Commission</strong>
+                        in Austin. I design, build and maintain Tableau and Power BI dashboards, support the people who
+                        rely on them, and apply statistical analysis to public-sector data.
                     </p>
                     <p>
-                        With over <strong>10 years of experience</strong> in market research, conducting research, survey administration, 
-                        and program evaluation, I help organizations understand their markets, customers, and impact. 
-                        My work combines various statistical analysis with clear storytelling to deliver insights that matter.
+                        Before HHSC, I spent <strong>more than 10 years</strong> in research and data roles with nonprofit,
+                        international development and social services organizations, from USAID-funded programs in
+                        Afghanistan to services for survivors of torture in Austin. That work taught me to design data
+                        collection, protect data quality, and turn findings into reports that leaders and funders act on.
                     </p>
                     <p>
-                        I'm currently expanding my expertise into <strong>AI and data science</strong>, bringing my 
-                         research background into cutting-edge analytics. I can support each step of the data 
-                        process to enable your organization in making Data-driven decisions or share insights with new audiences.
+                        Outside work, I build portfolio projects on <strong>Texas public issues</strong> (health, air
+                        quality and road safety) using public data, R, MySQL and Tableau Public. I speak
+                        English, Dari and Pashto.
                     </p>
                     <p>
-                        <strong>I am available for consulting projects and part-time work.</strong>
+                        <strong>I'm always open to connecting</strong> with analysts, researchers and teams working with
+                        health and public-sector data.
                     </p>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="images/Abdul.png" alt="Abdul Zarbi" onerror="this.style.display='none'">
+                    <img src="images/Abdul.jpg" alt="Portrait of Abdul Zarbi" width="800" height="608" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -762,90 +867,53 @@
     <section class="portfolio-section" id="portfolio">
         <div class="section-container">
             <h2>Portfolio</h2>
-            <p class="portfolio-intro">A sample of my work showcasing my data visualization, research methodologies, and analytical capabilities</p>
-            
+            <p class="portfolio-intro">Personal projects on Texas public issues, built with public data so anyone can check and reproduce the work.</p>
+
             <div class="portfolio-grid">
                 <div class="portfolio-card fade-in">
-                    <div class="portfolio-image" style="background: white; padding: 20px;">
-                        <img src="images/tableau.png" alt="Tableau" style="width: 100%; height: 100%; object-fit: contain;">
+                    <div class="portfolio-image">
+                        <!-- icon: cloud / air quality -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 15h4M3 19h8M15 19h6M17 15h4M7 11a5 5 0 0 1 9.6-2A4 4 0 1 1 18 15H10"/></svg>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-tag">Tableau Public</span>
-                        <h3 class="portfolio-title">Interactive Data Dashboards</h3>
+                        <span class="portfolio-tag">R · MySQL · Tableau Public</span><span class="portfolio-status">In progress</span>
+                        <h3 class="portfolio-title">Texas Air Quality 2025</h3>
                         <p class="portfolio-description">
-                            A collection of interactive visualizations demonstrating data storytelling, statistical 
-                            analysis, and insight communication across various domains including business and social issues.
+                            Which Texas counties exceeded PM2.5 and ozone standards most often in 2025, and how does
+                            that line up with asthma and COPD burden?
                         </p>
-                        <a href="https://public.tableau.com/app/profile/abdul.zarbi" target="_blank" class="portfolio-link">View Dashboards</a>
+                        <p class="portfolio-meta">Data: EPA AirData (daily monitor readings), CDC PLACES</p>
+                        <a href="https://github.com/AbdulZarbi/Texas-Air-Quality-2025" target="_blank" rel="noopener" class="portfolio-link">View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="portfolio-card fade-in">
-                    <div class="portfolio-image" style="background: #24292e; padding: 20px;">
-                        <img src="images/github-logo.jpg" alt="GitHub" style="width: 100%; height: 100%; object-fit: contain;">
+                    <div class="portfolio-image">
+                        <!-- icon: road / traffic -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 10.5v3M12 17v3"/></svg>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-tag">GitHub</span>
-                        <h3 class="portfolio-title">Data Analysis Projects</h3>
+                        <span class="portfolio-tag">R</span><span class="portfolio-status">In progress</span>
+                        <h3 class="portfolio-title">Austin Traffic Crash Analysis</h3>
                         <p class="portfolio-description">
-                            R programming projects, reproducible research workflows, and analytical scripts showcasing 
-                            technical proficiency in statistical computing, data manipulation, and research methodologies.
+                            Exploring where and when traffic crashes happen in the City of Austin, using the city's
+                            open crash records.
                         </p>
-                        <a href="https://github.com/AbdulZarbi" target="_blank" class="portfolio-link">View Projects</a>
+                        <p class="portfolio-meta">Data: City of Austin Open Data Portal</p>
+                        <a href="https://github.com/AbdulZarbi/Austin-Traffic-Crash" target="_blank" rel="noopener" class="portfolio-link">View on GitHub</a>
                     </div>
                 </div>
 
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">📈</div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Case Study</span>
-                        <h3 class="portfolio-title">USAID Program Evaluation (In Development)</h3>
-                        <p class="portfolio-description">
-                            Comprehensive program evaluation including baseline, midline, and endline surveys ensuring 
-                            USAID data quality standards. Led research activities and provided technical support to partner organizations.
-                        </p>
-                        <a href="#contact" class="portfolio-link">Request Details</a>
-                    </div>
-                </div>
+                <!-- PROJECT SLOT 3: to add a project, copy one card above, paste it here, and change
+                     the icon, tools tag, status (delete the <span class="portfolio-status"> line once it's finished),
+                     title, question, data source and link. -->
 
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">🔍</div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Research</span>
-                        <h3 class="portfolio-title">Market Research Studies (In Development)</h3>
-                        <p class="portfolio-description">
-                            Designed and executed comprehensive market research projects including survey design, 
-                            sample selection, data collection protocols, and actionable insights for strategic decision-making.
-                        </p>
-                        <a href="#contact" class="portfolio-link">Learn More</a>
-                    </div>
-                </div>
+                <!-- PROJECT SLOT 4: same as slot 3. -->
+            </div>
 
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">📋</div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Impact Assessment</span>
-                        <h3 class="portfolio-title">Social Services Analytics (In Development)</h3>
-                        <p class="portfolio-description">
-                            Data-driven case management system serving 100+ clients, achieving 50% improvement in 
-                            service delivery through streamlined processes and evidence-based interventions.
-                        </p>
-                        <a href="#contact" class="portfolio-link">View Results</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">🎓</div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Training</span>
-                        <h3 class="portfolio-title">Data Literacy Workshops (In Development)</h3>
-                        <p class="portfolio-description">
-                            Developed and delivered training programs on survey design, data collection best practices, 
-                            and data visualization for non-profit organizations and research teams.
-                        </p>
-                        <a href="#contact" class="portfolio-link">Inquire</a>
-                    </div>
-                </div>
+            <div class="portfolio-more">
+                <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" rel="noopener" class="portfolio-link">All dashboards on Tableau Public</a>
+                <a href="https://github.com/AbdulZarbi" target="_blank" rel="noopener" class="portfolio-link">All code on GitHub</a>
             </div>
         </div>
     </section>
@@ -856,59 +924,56 @@
             <h2>Areas of Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">📊</div>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
                     <h3>Statistical Analysis</h3>
                     <p>
-                        Expert in quantitative and qualitative research methods, hypothesis testing, regression analysis, 
-                        and predictive modeling using R, SPSS, and Excel. Transform complex datasets into meaningful 
-                        patterns and actionable insights.
+                        Descriptive and inferential statistics, hypothesis testing and regression in R, SAS, SQL
+                        and Excel, with assumptions and limitations stated plainly.
                     </p>
                 </div>
 
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">📋</div>
-                    <h3>Survey Design & Implementation</h3>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    <h3>Dashboard Development &amp; Support</h3>
                     <p>
-                        Specialized in creating robust survey instruments, sampling methodologies, and data collection 
-                        protocols. Experienced with Kobo Toolbox, Survey Monkey, Qualtrics, and ODK for large-scale 
-                        data collection initiatives.
+                        Designing, building and maintaining Tableau and Power BI dashboards from requirements to
+                        release, and supporting the people who use them.
                     </p>
                 </div>
 
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">🎯</div>
-                    <h3>Program Evaluation</h3>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+                    <h3>Data Preparation &amp; Quality</h3>
                     <p>
-                        Skilled in designing and implementing baseline, midline, and endline evaluations that measure 
-                        program impact and effectiveness. Ensure adherence to USAID and international donor data quality standards.
+                        Cleaning, joining and validating data with SQL (Oracle, MySQL), SAS and R, with
+                        data-quality checks built into every step.
                     </p>
                 </div>
 
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">📈</div>
-                    <h3>Data Visualization</h3>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M9 11h6M9 15h4"/></svg>
+                    <h3>Survey Design &amp; Program Evaluation</h3>
                     <p>
-                        Tableau Business Intelligence Analyst certified with expertise in creating interactive dashboards, 
-                        static infographics, and compelling data stories that communicate insights effectively to diverse audiences.
+                        Survey instruments, sampling and baseline, midline and endline evaluations to USAID
+                        data-quality standards, using Kobo Toolbox, Open Data Kit and Survey Monkey.
                     </p>
                 </div>
 
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">🔍</div>
-                    <h3>Market Research</h3>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg>
+                    <h3>Research &amp; Market Analysis</h3>
                     <p>
-                        Comprehensive experience conducting market analysis, competitive research, and consumer insights 
-                        studies. Provide strategic recommendations based on rigorous data analysis and industry trends.
+                        Market analysis, competitive research and consumer insight studies that end in clear,
+                        evidence-based recommendations.
                     </p>
                 </div>
 
                 <div class="expertise-card fade-in">
-                    <div class="expertise-icon">🤝</div>
+                    <svg class="expertise-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M22 20c0-3-2-5.2-5-5.8"/></svg>
                     <h3>Stakeholder Engagement</h3>
                     <p>
-                        Strong track record of collaborating with government agencies, NGOs, international organizations, 
-                        and community partners. Excel at translating technical findings into accessible insights for 
-                        non-technical audiences.
+                        Working with government agencies, NGOs, international organizations and community partners,
+                        and translating technical findings for non-technical audiences.
                     </p>
                 </div>
             </div>
@@ -927,27 +992,33 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="section-container">
-            <h2>Get in Touch</h2>
+            <h2>Let's Connect</h2>
             <p class="contact-description">
-                Do you have a project I can help you with? I'm available for consulting projects and 
-                part-time engagements. Let's discuss how data-driven insights can support your organization's goals.
+                I'm always open to connecting with analysts, researchers and teams working with health and
+                public-sector data. Email or LinkedIn is the best way to reach me.
             </p>
             <div class="contact-links">
                 <a href="mailto:zarbi786@gmail.com" class="contact-link">Email Me</a>
-                <a href="https://www.linkedin.com/in/abdulzarbi" target="_blank" class="contact-link">LinkedIn</a>
-                <a href="https://github.com/AbdulZarbi" target="_blank" class="contact-link">GitHub</a>
-                <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" class="contact-link">Tableau</a>
-                <a href="docs/AbdulZarbi_DataAnalyst_Resume.pdf" class="contact-link" download>Download Resume</a>
+                <a href="https://www.linkedin.com/in/abdulzarbi" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/AbdulZarbi" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+                <a href="https://public.tableau.com/app/profile/abdul.zarbi/vizzes" target="_blank" rel="noopener" class="contact-link">Tableau Public</a>
+                <a href="https://medium.com/@abdulwasayzarbi" target="_blank" rel="noopener" class="contact-link">Medium</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Abdul Zarbi. All rights reserved. | Austin, Texas</p>
+        <!-- The year updates itself (see script below), so this never goes stale -->
+        <p>© <span id="year">2026</span> Abdul Zarbi · Austin, Texas</p>
     </footer>
 
     <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // True when the visitor has turned off animations in their device settings
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -955,7 +1026,7 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     target.scrollIntoView({
-                        behavior: 'smooth',
+                        behavior: reduceMotion ? 'auto' : 'smooth',
                         block: 'start'
                     });
                 }
@@ -1018,10 +1089,14 @@
             canvas.height = canvas.offsetHeight;
         }
         resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            if (reduceMotion) animate(); // redraw the still frame after resizing
+        });
 
         const nodes = [];
-        const nodeCount = 100;
+        // Fewer dots on phones: every pair of dots is compared each frame, so 100 dots = ~5,000 checks
+        const nodeCount = window.innerWidth < 768 ? 45 : 100;
         const connectionDistance = 120;
         
         // AI organic colors palette
@@ -1110,10 +1185,11 @@
             });
             
             drawConnections();
-            
-            requestAnimationFrame(animate);
+
+            // With reduced motion, draw a single still frame instead of animating
+            if (!reduceMotion) requestAnimationFrame(animate);
         }
-        
+
         animate();
 
         // Leaflet.js World Map with Austin Location
@@ -1193,7 +1269,7 @@
                     <span style="
                         color: #6B7280;
                         font-size: 13px;
-                    ">📍 Available for remote & local work</span>
+                    ">Open to connecting</span>
                 </div>
             `, {
                 className: 'custom-popup'

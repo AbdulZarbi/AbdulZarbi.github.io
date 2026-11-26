@@ -1,6 +1,14 @@
+# R / RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
+# Quarto: build output is made by GitHub Actions, never committed
 /.quarto/
+/_site/
+/docs/
+/_freeze/
+
+# macOS
+.DS_Store

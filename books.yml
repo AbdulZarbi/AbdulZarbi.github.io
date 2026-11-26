@@ -1,0 +1,18 @@
+# My bookshelf: one entry per book. The Bookshelf page (books.qmd) builds its cards from this file.
+#
+# To add a book, copy the block below, paste it under the last entry, and fill it in:
+#
+# - title: "Book title"
+#   author: "First Author, Second Author"
+#   image: "https://covers.openlibrary.org/b/isbn/ISBN-L.jpg"   # swap ISBN for the 13-digit ISBN (no dashes)
+#   date: "2026-11-25"        # date you started or finished, YYYY-MM-DD (newest shows first)
+#   categories: ["Finished", "Tableau"]   # first one: "Currently reading" or "Finished"; then 1-2 topics
+#   description: "Two or three sentences: what the book is about and my main takeaway."
+#   path: books/book-slug.qmd  # optional: link to a longer review page; delete this line if there isn't one
+
+- title: "Tableau Strategies"
+  author: "Ann Jackson, Luke Stanke"
+  image: "https://covers.openlibrary.org/b/isbn/9781492080084-L.jpg"
+  date: "2026-11-25"
+  categories: ["Currently reading", "Tableau", "Data visualization"]
+  description: "O'Reilly, 2021. Practical approaches for building Tableau dashboards that answer real business questions. My notes will follow when I finish it."
