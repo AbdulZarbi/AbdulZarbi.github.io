@@ -20,7 +20,24 @@ The build output (`_site/`) is never committed; GitHub Actions makes it.
 
 **Add a book:** open `books.yml`, copy the commented template at the top, paste it at the bottom, fill it in. For the cover, use `https://covers.openlibrary.org/b/isbn/<ISBN>-L.jpg` with the book's 13-digit ISBN.
 
-**Add a portfolio project:** in `index.html`, find `PROJECT SLOT 3`, copy one of the project cards above it, and paste it there.
+**Add a portfolio project:** in `index.html`, find `PROJECT SLOT 3`, copy one of the project cards above it, and paste it there. Put a ~1000px-wide JPG in `images/projects/` and point the card's `--photo` at it.
+
+## Photo credits
+
+All card photos are free to use with no attribution required (CC0 or public domain). Listed here so their source is on record.
+
+| File | Source | License |
+|---|---|---|
+| `images/projects/texas-air-quality.jpg` | "Crane on the edge of the Houston Ship Channel cuts across skyline dimmed by smog", EPA DOCUMERICA, U.S. National Archives 550907 (Wikimedia Commons) | Public domain (U.S. government work) |
+| `images/projects/austin-traffic.jpg` | "Highway Road", Negative Space, StockSnap | CC0 |
+| `images/expertise/statistical-analysis.jpg` | "Google Analytics", Negative Space, StockSnap | CC0 |
+| `images/expertise/dashboards.jpg` | "Business Working", Marc Chouinard, StockSnap | CC0 |
+| `images/expertise/data-preparation.jpg` | "Code Technology", Markus Spiske, StockSnap | CC0 |
+| `images/expertise/survey-design.jpg` | "Clipboard Desk", Design by Matt, StockSnap | CC0 |
+| `images/expertise/research.jpg` | "Magnifying glass newspaper", rawpixel | CC0 |
+| `images/expertise/stakeholders.jpg` | "Business People", Direct Media, StockSnap | CC0 |
+
+Map: © OpenStreetMap contributors (shown on the map).
 
 **Preview locally:** in the RStudio Terminal run `quarto preview`, or just open `index.html` in a browser.
 
