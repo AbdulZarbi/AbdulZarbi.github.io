@@ -6,7 +6,7 @@ project:
   resources:
     - index.html
     - CNAME
-    - images/*
+    - images/**   # ** = every file, including subfolders (projects/, expertise/)
 
 website:
   title: "Abdul Zarbi"
